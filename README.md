@@ -1,2 +1,2 @@
 # Food_Reviews_Map
-<iframe src="mapout.html" height="500" width="500"></iframe>
+This repository is set up to host an interactive map of my food reviews.
