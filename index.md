@@ -1,3 +1,3 @@
 ## Food Reviews Map
 
-<iframe src="mapout.html" height="500" width="650"></iframe>
+<iframe src="mapout.html" height="500" width="100%"></iframe>
