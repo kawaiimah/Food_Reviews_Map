@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_b3e5c4e17bf64daa9b52a0f379525d60 {
+                #map_acd61d9473184725ace0c6516c9ba3de {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -32,17 +32,19 @@
                 }
             </style>
         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
 </head>
 <body>    
     
-            <div class="folium-map" id="map_b3e5c4e17bf64daa9b52a0f379525d60" ></div>
+            <div class="folium-map" id="map_acd61d9473184725ace0c6516c9ba3de" ></div>
         
 </body>
 <script>    
     
-            var map_b3e5c4e17bf64daa9b52a0f379525d60 = L.map(
-                "map_b3e5c4e17bf64daa9b52a0f379525d60",
+            var map_acd61d9473184725ace0c6516c9ba3de = L.map(
+                "map_acd61d9473184725ace0c6516c9ba3de",
                 {
                     center: [1.33, 103.84],
                     crs: L.CRS.EPSG3857,
@@ -56,32 +58,83 @@
 
         
     
-            var tile_layer_c9bef44f573148c8bf0fe54ee3c08bf3 = L.tileLayer(
+            var tile_layer_26cad7e25cc64bc3a9b03c062ae63b77 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_b3e5c4e17bf64daa9b52a0f379525d60);
+            ).addTo(map_acd61d9473184725ace0c6516c9ba3de);
         
     
-            var regular_polygon_marker_91eec44cdd1a4dd9a67449a2ee5bb50e = new L.RegularPolygonMarker(
+            var marker_cluster_fd0a22041bd641b685f0bc1b7689c37e = L.markerClusterGroup(
+                {}
+            );
+            marker_cluster_fd0a22041bd641b685f0bc1b7689c37e.options.iconCreateFunction =
+                function(cluster) {
+    var childCount = cluster.getChildCount(); 
+    var c = ' marker-cluster-large';
+    return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
+    };
+            map_acd61d9473184725ace0c6516c9ba3de.addLayer(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var marker_1a0cf558800a454abb23fdfa3a0b6baf = L.marker(
+                [1.28937099358897, 103.836603810879],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_4c494ab828a54d228b0b2f1c071952d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a0cf558800a454abb23fdfa3a0b6baf.setIcon(icon_4c494ab828a54d228b0b2f1c071952d7);
+        
+    
+        var popup_2c7f162d19c147b1bf47f25d042283fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e2649baa9b348f1aef67ab0086b84fa = $(`<div id="html_7e2649baa9b348f1aef67ab0086b84fa" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CVmorRQvVrV/">https://www.instagram.com/p/CVmorRQvVrV/</a></div>`)[0];
+            popup_2c7f162d19c147b1bf47f25d042283fe.setContent(html_7e2649baa9b348f1aef67ab0086b84fa);
+        
+
+        marker_1a0cf558800a454abb23fdfa3a0b6baf.bindPopup(popup_2c7f162d19c147b1bf47f25d042283fe)
+        ;
+
+        
+    
+    
+            marker_1a0cf558800a454abb23fdfa3a0b6baf.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04737892739d497e9adcd4f013e7c7fd = L.marker(
                 [1.29846963655747, 103.85486703715],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 12, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
-            ).addTo(map_b3e5c4e17bf64daa9b52a0f379525d60);
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
         
     
-        var popup_69efacf2991945199e36c8855deeff13 = L.popup({"maxWidth": "100%"});
+            var icon_877dcfcc80c84b6c9db5327532bbc132 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_04737892739d497e9adcd4f013e7c7fd.setIcon(icon_877dcfcc80c84b6c9db5327532bbc132);
+        
+    
+        var popup_d5384f65a81048fab5afd1285df1b9d9 = L.popup({"maxWidth": "100%"});
 
         
-            var html_fed9fd73e7684583b3c8174befa7c558 = $(`<div id="html_fed9fd73e7684583b3c8174befa7c558" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CVDNCDBBvJH/">https://www.instagram.com/p/CVDNCDBBvJH/</a></div>`)[0];
-            popup_69efacf2991945199e36c8855deeff13.setContent(html_fed9fd73e7684583b3c8174befa7c558);
+            var html_919260ab7f944ac8b6d1cd4ab1a33d38 = $(`<div id="html_919260ab7f944ac8b6d1cd4ab1a33d38" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CVDNCDBBvJH/">https://www.instagram.com/p/CVDNCDBBvJH/</a></div>`)[0];
+            popup_d5384f65a81048fab5afd1285df1b9d9.setContent(html_919260ab7f944ac8b6d1cd4ab1a33d38);
         
 
-        regular_polygon_marker_91eec44cdd1a4dd9a67449a2ee5bb50e.bindPopup(popup_69efacf2991945199e36c8855deeff13)
+        marker_04737892739d497e9adcd4f013e7c7fd.bindPopup(popup_d5384f65a81048fab5afd1285df1b9d9)
         ;
 
         
     
     
-            regular_polygon_marker_91eec44cdd1a4dd9a67449a2ee5bb50e.bindTooltip(
+            marker_04737892739d497e9adcd4f013e7c7fd.bindTooltip(
                 `<div>
                      Click for link!
                  </div>`,
@@ -89,26 +142,32 @@
             );
         
     
-            var regular_polygon_marker_a6a5027c04a1485386ee87c76d68543a = new L.RegularPolygonMarker(
+            var marker_87b3c28e244f4bb4ba91e5751fe6ec30 = L.marker(
                 [1.34404445156372, 103.750294500884],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 12, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
-            ).addTo(map_b3e5c4e17bf64daa9b52a0f379525d60);
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
         
     
-        var popup_1b8007fa5dae477da12e224437f3312f = L.popup({"maxWidth": "100%"});
+            var icon_84781e42489f413ebbe30c79f04e4543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87b3c28e244f4bb4ba91e5751fe6ec30.setIcon(icon_84781e42489f413ebbe30c79f04e4543);
+        
+    
+        var popup_98864a1b98e14834940c20bb692230ba = L.popup({"maxWidth": "100%"});
 
         
-            var html_e7b36219f2dc4f4c9808f4d32037ec82 = $(`<div id="html_e7b36219f2dc4f4c9808f4d32037ec82" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUbpU8uPDAz/">https://www.instagram.com/p/CUbpU8uPDAz/</a></div>`)[0];
-            popup_1b8007fa5dae477da12e224437f3312f.setContent(html_e7b36219f2dc4f4c9808f4d32037ec82);
+            var html_d0d0f2dcda81427ebee07c56ede7e28a = $(`<div id="html_d0d0f2dcda81427ebee07c56ede7e28a" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUbpU8uPDAz/">https://www.instagram.com/p/CUbpU8uPDAz/</a></div>`)[0];
+            popup_98864a1b98e14834940c20bb692230ba.setContent(html_d0d0f2dcda81427ebee07c56ede7e28a);
         
 
-        regular_polygon_marker_a6a5027c04a1485386ee87c76d68543a.bindPopup(popup_1b8007fa5dae477da12e224437f3312f)
+        marker_87b3c28e244f4bb4ba91e5751fe6ec30.bindPopup(popup_98864a1b98e14834940c20bb692230ba)
         ;
 
         
     
     
-            regular_polygon_marker_a6a5027c04a1485386ee87c76d68543a.bindTooltip(
+            marker_87b3c28e244f4bb4ba91e5751fe6ec30.bindTooltip(
                 `<div>
                      Click for link!
                  </div>`,
@@ -116,26 +175,32 @@
             );
         
     
-            var regular_polygon_marker_78b349a45da44de99af8d8c30a6875c4 = new L.RegularPolygonMarker(
+            var marker_5976e4f133b94982861c8881ba325e63 = L.marker(
                 [1.31996748439185, 103.843850630993],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 12, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
-            ).addTo(map_b3e5c4e17bf64daa9b52a0f379525d60);
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
         
     
-        var popup_ed896bf14a184cc79d17b1ca1bc1c570 = L.popup({"maxWidth": "100%"});
+            var icon_efe8e6f9c0a94e5b818c869f8638c378 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5976e4f133b94982861c8881ba325e63.setIcon(icon_efe8e6f9c0a94e5b818c869f8638c378);
+        
+    
+        var popup_65668eef095243ada4a4ad29a9a66be4 = L.popup({"maxWidth": "100%"});
 
         
-            var html_35ff08f99bd241bf81db5b60f56fd38d = $(`<div id="html_35ff08f99bd241bf81db5b60f56fd38d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUm5IwzhNUF/">https://www.instagram.com/p/CUm5IwzhNUF/</a></div>`)[0];
-            popup_ed896bf14a184cc79d17b1ca1bc1c570.setContent(html_35ff08f99bd241bf81db5b60f56fd38d);
+            var html_844b0b07c9074b8e961d3f835b3d7caa = $(`<div id="html_844b0b07c9074b8e961d3f835b3d7caa" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUm5IwzhNUF/">https://www.instagram.com/p/CUm5IwzhNUF/</a></div>`)[0];
+            popup_65668eef095243ada4a4ad29a9a66be4.setContent(html_844b0b07c9074b8e961d3f835b3d7caa);
         
 
-        regular_polygon_marker_78b349a45da44de99af8d8c30a6875c4.bindPopup(popup_ed896bf14a184cc79d17b1ca1bc1c570)
+        marker_5976e4f133b94982861c8881ba325e63.bindPopup(popup_65668eef095243ada4a4ad29a9a66be4)
         ;
 
         
     
     
-            regular_polygon_marker_78b349a45da44de99af8d8c30a6875c4.bindTooltip(
+            marker_5976e4f133b94982861c8881ba325e63.bindTooltip(
                 `<div>
                      Click for link!
                  </div>`,
@@ -143,26 +208,1517 @@
             );
         
     
-            var regular_polygon_marker_f9dd3271cf584abcaa512c0c5d46220e = new L.RegularPolygonMarker(
+            var marker_19ab2d63157641c58d3b48a0724c8e9e = L.marker(
                 [1.32044103104797, 103.844192628979],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 12, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
-            ).addTo(map_b3e5c4e17bf64daa9b52a0f379525d60);
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
         
     
-        var popup_300cc48fb00e481e9e46af7e9ea4ccd6 = L.popup({"maxWidth": "100%"});
+            var icon_247683b81efa45ae9b112e8647f006c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_19ab2d63157641c58d3b48a0724c8e9e.setIcon(icon_247683b81efa45ae9b112e8647f006c8);
+        
+    
+        var popup_052d3520079a48778307517558521eef = L.popup({"maxWidth": "100%"});
 
         
-            var html_389d0d7ec72347659ee6d006469d3ec9 = $(`<div id="html_389d0d7ec72347659ee6d006469d3ec9" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUCRRDHvha8/">https://www.instagram.com/p/CUCRRDHvha8/</a></div>`)[0];
-            popup_300cc48fb00e481e9e46af7e9ea4ccd6.setContent(html_389d0d7ec72347659ee6d006469d3ec9);
+            var html_5474dfc7164e4619a5c2344134fb1f24 = $(`<div id="html_5474dfc7164e4619a5c2344134fb1f24" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUCRRDHvha8/">https://www.instagram.com/p/CUCRRDHvha8/</a></div>`)[0];
+            popup_052d3520079a48778307517558521eef.setContent(html_5474dfc7164e4619a5c2344134fb1f24);
         
 
-        regular_polygon_marker_f9dd3271cf584abcaa512c0c5d46220e.bindPopup(popup_300cc48fb00e481e9e46af7e9ea4ccd6)
+        marker_19ab2d63157641c58d3b48a0724c8e9e.bindPopup(popup_052d3520079a48778307517558521eef)
         ;
 
         
     
     
-            regular_polygon_marker_f9dd3271cf584abcaa512c0c5d46220e.bindTooltip(
+            marker_19ab2d63157641c58d3b48a0724c8e9e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_020bdef3bcf14a25ba76dc8c6b06d174 = L.marker(
+                [1.30665484543191, 103.829588045188],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_09617d7082a84437b49b2b0ed4e85760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_020bdef3bcf14a25ba76dc8c6b06d174.setIcon(icon_09617d7082a84437b49b2b0ed4e85760);
+        
+    
+        var popup_277ef454277346d7ae735436007594e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_397ad842996a4fcf9ed7f9b58d48dadd = $(`<div id="html_397ad842996a4fcf9ed7f9b58d48dadd" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CTy1Ugbh8Lw/">https://www.instagram.com/p/CTy1Ugbh8Lw/</a></div>`)[0];
+            popup_277ef454277346d7ae735436007594e9.setContent(html_397ad842996a4fcf9ed7f9b58d48dadd);
+        
+
+        marker_020bdef3bcf14a25ba76dc8c6b06d174.bindPopup(popup_277ef454277346d7ae735436007594e9)
+        ;
+
+        
+    
+    
+            marker_020bdef3bcf14a25ba76dc8c6b06d174.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62d00dc4ccf54ae2906aed46b6f932b6 = L.marker(
+                [1.3274754002115, 103.753564699613],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_bbd5a37b46704182b64f44b79dc80855 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62d00dc4ccf54ae2906aed46b6f932b6.setIcon(icon_bbd5a37b46704182b64f44b79dc80855);
+        
+    
+        var popup_c54833bae41b4a32a7c62bdebf2efab3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d3f0cb19d9c434baab811558d7a3e2d = $(`<div id="html_2d3f0cb19d9c434baab811558d7a3e2d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CTUe5yHPr0H/">https://www.instagram.com/p/CTUe5yHPr0H/</a></div>`)[0];
+            popup_c54833bae41b4a32a7c62bdebf2efab3.setContent(html_2d3f0cb19d9c434baab811558d7a3e2d);
+        
+
+        marker_62d00dc4ccf54ae2906aed46b6f932b6.bindPopup(popup_c54833bae41b4a32a7c62bdebf2efab3)
+        ;
+
+        
+    
+    
+            marker_62d00dc4ccf54ae2906aed46b6f932b6.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47e4ac19113445e6a1438d55fdf481ff = L.marker(
+                [1.31139349427341, 103.856487111691],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_8e8e82749a2346fcb8dd88751b688b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_47e4ac19113445e6a1438d55fdf481ff.setIcon(icon_8e8e82749a2346fcb8dd88751b688b29);
+        
+    
+        var popup_c375536392a64212b433d2b45b2b1733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5b2899f0890428aa987493a5967a7a6 = $(`<div id="html_c5b2899f0890428aa987493a5967a7a6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CRYe7KznaKz/">https://www.instagram.com/p/CRYe7KznaKz/</a></div>`)[0];
+            popup_c375536392a64212b433d2b45b2b1733.setContent(html_c5b2899f0890428aa987493a5967a7a6);
+        
+
+        marker_47e4ac19113445e6a1438d55fdf481ff.bindPopup(popup_c375536392a64212b433d2b45b2b1733)
+        ;
+
+        
+    
+    
+            marker_47e4ac19113445e6a1438d55fdf481ff.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8019e97ff70b4ddd9a705e047b0af169 = L.marker(
+                [1.32100020851204, 103.868321383856],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_e069023c177c4bcda05fd6c80a806622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8019e97ff70b4ddd9a705e047b0af169.setIcon(icon_e069023c177c4bcda05fd6c80a806622);
+        
+    
+        var popup_df802af070c8445d8a9b0d1bca4c1335 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15f15ba11ce54cdaadd17554a98c4f25 = $(`<div id="html_15f15ba11ce54cdaadd17554a98c4f25" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CRGWVMpnyN2/">https://www.instagram.com/p/CRGWVMpnyN2/</a></div>`)[0];
+            popup_df802af070c8445d8a9b0d1bca4c1335.setContent(html_15f15ba11ce54cdaadd17554a98c4f25);
+        
+
+        marker_8019e97ff70b4ddd9a705e047b0af169.bindPopup(popup_df802af070c8445d8a9b0d1bca4c1335)
+        ;
+
+        
+    
+    
+            marker_8019e97ff70b4ddd9a705e047b0af169.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e83d4a721d9f49928b6f0f671b8fbbf0 = L.marker(
+                [1.31568827087057, 103.816190606231],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_6578b890780e48e18702c930f44aba7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e83d4a721d9f49928b6f0f671b8fbbf0.setIcon(icon_6578b890780e48e18702c930f44aba7d);
+        
+    
+        var popup_006d5aef81f2486588055bb3e37cc1ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45ce3a88ef1e4be29efcc9842c486f0d = $(`<div id="html_45ce3a88ef1e4be29efcc9842c486f0d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CQskeArHcC2/">https://www.instagram.com/p/CQskeArHcC2/</a></div>`)[0];
+            popup_006d5aef81f2486588055bb3e37cc1ed.setContent(html_45ce3a88ef1e4be29efcc9842c486f0d);
+        
+
+        marker_e83d4a721d9f49928b6f0f671b8fbbf0.bindPopup(popup_006d5aef81f2486588055bb3e37cc1ed)
+        ;
+
+        
+    
+    
+            marker_e83d4a721d9f49928b6f0f671b8fbbf0.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_962723be1bc343379c9d92a052a1fe4c = L.marker(
+                [1.3002867755265, 103.837420249281],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_c1d42b5640f943b7b9790288a8040815 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_962723be1bc343379c9d92a052a1fe4c.setIcon(icon_c1d42b5640f943b7b9790288a8040815);
+        
+    
+        var popup_d011a4c3489b4daab0ffb30919109848 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33a06e4718834377a5dbd74e02091e73 = $(`<div id="html_33a06e4718834377a5dbd74e02091e73" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CQAdKbOH-lQ/">https://www.instagram.com/p/CQAdKbOH-lQ/</a></div>`)[0];
+            popup_d011a4c3489b4daab0ffb30919109848.setContent(html_33a06e4718834377a5dbd74e02091e73);
+        
+
+        marker_962723be1bc343379c9d92a052a1fe4c.bindPopup(popup_d011a4c3489b4daab0ffb30919109848)
+        ;
+
+        
+    
+    
+            marker_962723be1bc343379c9d92a052a1fe4c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49da7189a7624317b77cfe1e1a3ecf95 = L.marker(
+                [1.30691410570767, 103.856086249155],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_5814df0de9434253a0c9d0687e0e363e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49da7189a7624317b77cfe1e1a3ecf95.setIcon(icon_5814df0de9434253a0c9d0687e0e363e);
+        
+    
+        var popup_2e5e397d238c4539885238915a9df031 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c71191f603db40d391526fcf068e7eb6 = $(`<div id="html_c71191f603db40d391526fcf068e7eb6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CPPnlxYng4N/">https://www.instagram.com/p/CPPnlxYng4N/</a></div>`)[0];
+            popup_2e5e397d238c4539885238915a9df031.setContent(html_c71191f603db40d391526fcf068e7eb6);
+        
+
+        marker_49da7189a7624317b77cfe1e1a3ecf95.bindPopup(popup_2e5e397d238c4539885238915a9df031)
+        ;
+
+        
+    
+    
+            marker_49da7189a7624317b77cfe1e1a3ecf95.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7ba209324634fe2b66de25e620e2502 = L.marker(
+                [1.31540016726387, 103.883548120464],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_587ea582c3a5469eb67ae6fad737e3fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e7ba209324634fe2b66de25e620e2502.setIcon(icon_587ea582c3a5469eb67ae6fad737e3fb);
+        
+    
+        var popup_95c391e00337492a911b66a00ae5eb71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c25dda4ffa941b5b47b822de09533e9 = $(`<div id="html_9c25dda4ffa941b5b47b822de09533e9" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COo404mF7MC/">https://www.instagram.com/p/COo404mF7MC/</a></div>`)[0];
+            popup_95c391e00337492a911b66a00ae5eb71.setContent(html_9c25dda4ffa941b5b47b822de09533e9);
+        
+
+        marker_e7ba209324634fe2b66de25e620e2502.bindPopup(popup_95c391e00337492a911b66a00ae5eb71)
+        ;
+
+        
+    
+    
+            marker_e7ba209324634fe2b66de25e620e2502.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6f9c22a3bd442a0b26eae61500b03ed = L.marker(
+                [1.28006668363649, 103.841377725021],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_b3ca7e5d4d5948fdae6945b02727e115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6f9c22a3bd442a0b26eae61500b03ed.setIcon(icon_b3ca7e5d4d5948fdae6945b02727e115);
+        
+    
+        var popup_1c00f81de2f84696be8b6dd7d780c872 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39a3a2bde4f74927944006efc645022c = $(`<div id="html_39a3a2bde4f74927944006efc645022c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COkEupBFn_C/">https://www.instagram.com/p/COkEupBFn_C/</a></div>`)[0];
+            popup_1c00f81de2f84696be8b6dd7d780c872.setContent(html_39a3a2bde4f74927944006efc645022c);
+        
+
+        marker_a6f9c22a3bd442a0b26eae61500b03ed.bindPopup(popup_1c00f81de2f84696be8b6dd7d780c872)
+        ;
+
+        
+    
+    
+            marker_a6f9c22a3bd442a0b26eae61500b03ed.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbd876a441264538bddd2cfb5dbdf0a5 = L.marker(
+                [1.27109117295922, 103.81976836625],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_0d1022687be8490ea789e413c27cca5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dbd876a441264538bddd2cfb5dbdf0a5.setIcon(icon_0d1022687be8490ea789e413c27cca5b);
+        
+    
+        var popup_e4f91638e6ba42df8710f31a9128e033 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fca77c52fe40407ead91a7333160e1bf = $(`<div id="html_fca77c52fe40407ead91a7333160e1bf" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COZcF_0FThZ/">https://www.instagram.com/p/COZcF_0FThZ/</a></div>`)[0];
+            popup_e4f91638e6ba42df8710f31a9128e033.setContent(html_fca77c52fe40407ead91a7333160e1bf);
+        
+
+        marker_dbd876a441264538bddd2cfb5dbdf0a5.bindPopup(popup_e4f91638e6ba42df8710f31a9128e033)
+        ;
+
+        
+    
+    
+            marker_dbd876a441264538bddd2cfb5dbdf0a5.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9d986c97fbb4d56ac9437c348d731c5 = L.marker(
+                [1.30399286856099, 103.831988903795],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_3413281cb5144924addc00af761a817b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f9d986c97fbb4d56ac9437c348d731c5.setIcon(icon_3413281cb5144924addc00af761a817b);
+        
+    
+        var popup_f4e446c0c74e4a7a990a47b6dcef61a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47a0bf6a5ed24aaab4934a5f959a9b50 = $(`<div id="html_47a0bf6a5ed24aaab4934a5f959a9b50" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COSk-vUliE4/">https://www.instagram.com/p/COSk-vUliE4/</a></div>`)[0];
+            popup_f4e446c0c74e4a7a990a47b6dcef61a0.setContent(html_47a0bf6a5ed24aaab4934a5f959a9b50);
+        
+
+        marker_f9d986c97fbb4d56ac9437c348d731c5.bindPopup(popup_f4e446c0c74e4a7a990a47b6dcef61a0)
+        ;
+
+        
+    
+    
+            marker_f9d986c97fbb4d56ac9437c348d731c5.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b258cbd5f4b14ea6a43aabfb78d5cf40 = L.marker(
+                [1.32044103104797, 103.844192628979],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_13390896fcd941d08971b95c765c0826 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b258cbd5f4b14ea6a43aabfb78d5cf40.setIcon(icon_13390896fcd941d08971b95c765c0826);
+        
+    
+        var popup_ca5eb84bf1e045c79507ccf83f34cfb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f706e1979a804c7db851d7a542556c32 = $(`<div id="html_f706e1979a804c7db851d7a542556c32" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COK3vw8FZo4/">https://www.instagram.com/p/COK3vw8FZo4/</a></div>`)[0];
+            popup_ca5eb84bf1e045c79507ccf83f34cfb4.setContent(html_f706e1979a804c7db851d7a542556c32);
+        
+
+        marker_b258cbd5f4b14ea6a43aabfb78d5cf40.bindPopup(popup_ca5eb84bf1e045c79507ccf83f34cfb4)
+        ;
+
+        
+    
+    
+            marker_b258cbd5f4b14ea6a43aabfb78d5cf40.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77c56f5bdbf84d2c931c2c453b5afd1f = L.marker(
+                [1.32044103104797, 103.844192628979],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_b1a5a5932ab649b087d70ab456982270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_77c56f5bdbf84d2c931c2c453b5afd1f.setIcon(icon_b1a5a5932ab649b087d70ab456982270);
+        
+    
+        var popup_dd3781dc05af41158bf7c9892354b2b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbde17f5696f4610a3d73bb627fe5a0f = $(`<div id="html_cbde17f5696f4610a3d73bb627fe5a0f" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CN4xsygFJ4i/">https://www.instagram.com/p/CN4xsygFJ4i/</a></div>`)[0];
+            popup_dd3781dc05af41158bf7c9892354b2b5.setContent(html_cbde17f5696f4610a3d73bb627fe5a0f);
+        
+
+        marker_77c56f5bdbf84d2c931c2c453b5afd1f.bindPopup(popup_dd3781dc05af41158bf7c9892354b2b5)
+        ;
+
+        
+    
+    
+            marker_77c56f5bdbf84d2c931c2c453b5afd1f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f86e1082d77b4753b337523baea0a1eb = L.marker(
+                [1.30823166858437, 103.850992046671],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_b10291e3c7ea4cd3b73fb3f353e4e1fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f86e1082d77b4753b337523baea0a1eb.setIcon(icon_b10291e3c7ea4cd3b73fb3f353e4e1fd);
+        
+    
+        var popup_7065536e629f4b6388ce36382bc28b47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20e835c6c02141f8813e4f8ab60b0191 = $(`<div id="html_20e835c6c02141f8813e4f8ab60b0191" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CNy8jD_FU8q/">https://www.instagram.com/p/CNy8jD_FU8q/</a></div>`)[0];
+            popup_7065536e629f4b6388ce36382bc28b47.setContent(html_20e835c6c02141f8813e4f8ab60b0191);
+        
+
+        marker_f86e1082d77b4753b337523baea0a1eb.bindPopup(popup_7065536e629f4b6388ce36382bc28b47)
+        ;
+
+        
+    
+    
+            marker_f86e1082d77b4753b337523baea0a1eb.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67b2539d42fb405fb0bccb37fe1b9bde = L.marker(
+                [1.35525176294219, 103.988939665328],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_eeb37f6050ca40c28858fbcd225cabe2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_67b2539d42fb405fb0bccb37fe1b9bde.setIcon(icon_eeb37f6050ca40c28858fbcd225cabe2);
+        
+    
+        var popup_1a38856ff3524627a60bb36163a58d10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e4db24e48674c2288b462f52bbbc381 = $(`<div id="html_4e4db24e48674c2288b462f52bbbc381" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CNeiGy1lYqt/">https://www.instagram.com/p/CNeiGy1lYqt/</a></div>`)[0];
+            popup_1a38856ff3524627a60bb36163a58d10.setContent(html_4e4db24e48674c2288b462f52bbbc381);
+        
+
+        marker_67b2539d42fb405fb0bccb37fe1b9bde.bindPopup(popup_1a38856ff3524627a60bb36163a58d10)
+        ;
+
+        
+    
+    
+            marker_67b2539d42fb405fb0bccb37fe1b9bde.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b3e0e19fa6747c990abfbc13091d53a = L.marker(
+                [1.28332249857386, 103.857629111139],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_d9e2508f937c4d368b01b8da191506f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7b3e0e19fa6747c990abfbc13091d53a.setIcon(icon_d9e2508f937c4d368b01b8da191506f2);
+        
+    
+        var popup_a9f64986c9034cdf89da8cc395eb6652 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d87be4b1f3ec46cf8e1500c957e62d60 = $(`<div id="html_d87be4b1f3ec46cf8e1500c957e62d60" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CNU5gOwFvZz/">https://www.instagram.com/p/CNU5gOwFvZz/</a></div>`)[0];
+            popup_a9f64986c9034cdf89da8cc395eb6652.setContent(html_d87be4b1f3ec46cf8e1500c957e62d60);
+        
+
+        marker_7b3e0e19fa6747c990abfbc13091d53a.bindPopup(popup_a9f64986c9034cdf89da8cc395eb6652)
+        ;
+
+        
+    
+    
+            marker_7b3e0e19fa6747c990abfbc13091d53a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4421d7c13f7b4bc5a87d9139970c4636 = L.marker(
+                [1.30369890706785, 103.833189592785],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_2ec55a9ac4c84bec82727649de97ea0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4421d7c13f7b4bc5a87d9139970c4636.setIcon(icon_2ec55a9ac4c84bec82727649de97ea0e);
+        
+    
+        var popup_3328222aee21483b92f791642da04120 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b5e7a1d59c0434c9aae7d753073ae95 = $(`<div id="html_5b5e7a1d59c0434c9aae7d753073ae95" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CM6j9uhlCQP/">https://www.instagram.com/p/CM6j9uhlCQP/</a></div>`)[0];
+            popup_3328222aee21483b92f791642da04120.setContent(html_5b5e7a1d59c0434c9aae7d753073ae95);
+        
+
+        marker_4421d7c13f7b4bc5a87d9139970c4636.bindPopup(popup_3328222aee21483b92f791642da04120)
+        ;
+
+        
+    
+    
+            marker_4421d7c13f7b4bc5a87d9139970c4636.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7ea7be822c040b3981f3f21cf69dc2b = L.marker(
+                [1.31416383479813, 103.853905530109],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_96bfe9e572ba486eb7999a6cb256ef99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f7ea7be822c040b3981f3f21cf69dc2b.setIcon(icon_96bfe9e572ba486eb7999a6cb256ef99);
+        
+    
+        var popup_d152eafaa27f455f86e1d5f9e8058308 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39eb3c3298db49059813134ea4d0af70 = $(`<div id="html_39eb3c3298db49059813134ea4d0af70" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CMmvcJDFiKH/">https://www.instagram.com/p/CMmvcJDFiKH/</a></div>`)[0];
+            popup_d152eafaa27f455f86e1d5f9e8058308.setContent(html_39eb3c3298db49059813134ea4d0af70);
+        
+
+        marker_f7ea7be822c040b3981f3f21cf69dc2b.bindPopup(popup_d152eafaa27f455f86e1d5f9e8058308)
+        ;
+
+        
+    
+    
+            marker_f7ea7be822c040b3981f3f21cf69dc2b.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02e99aa4a1c741fa8643b7f50ceb8bd1 = L.marker(
+                [1.30572373922754, 103.82810604464],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_fbabb152006e482ab91614d6fad6c057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02e99aa4a1c741fa8643b7f50ceb8bd1.setIcon(icon_fbabb152006e482ab91614d6fad6c057);
+        
+    
+        var popup_e5b73bc78f004595a3d1310864392e89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17b835a3e44349efa137a2f0f4efa31c = $(`<div id="html_17b835a3e44349efa137a2f0f4efa31c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CMUfDdfFX_T/">https://www.instagram.com/p/CMUfDdfFX_T/</a></div>`)[0];
+            popup_e5b73bc78f004595a3d1310864392e89.setContent(html_17b835a3e44349efa137a2f0f4efa31c);
+        
+
+        marker_02e99aa4a1c741fa8643b7f50ceb8bd1.bindPopup(popup_e5b73bc78f004595a3d1310864392e89)
+        ;
+
+        
+    
+    
+            marker_02e99aa4a1c741fa8643b7f50ceb8bd1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d222799ef8874df6b23099bc3de7ac22 = L.marker(
+                [1.31156153927788, 103.875895476507],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_d152159fb1a140ebb6ca374f3996fd34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d222799ef8874df6b23099bc3de7ac22.setIcon(icon_d152159fb1a140ebb6ca374f3996fd34);
+        
+    
+        var popup_37bdac917f6f492daff52c6810b88033 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_652ae810731443ca9a3f6531cab03096 = $(`<div id="html_652ae810731443ca9a3f6531cab03096" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CL9Km3CFbjY/">https://www.instagram.com/p/CL9Km3CFbjY/</a></div>`)[0];
+            popup_37bdac917f6f492daff52c6810b88033.setContent(html_652ae810731443ca9a3f6531cab03096);
+        
+
+        marker_d222799ef8874df6b23099bc3de7ac22.bindPopup(popup_37bdac917f6f492daff52c6810b88033)
+        ;
+
+        
+    
+    
+            marker_d222799ef8874df6b23099bc3de7ac22.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_140512b470ce4c7e969f918e1bd74808 = L.marker(
+                [1.30149743415611, 103.836444791568],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_689607704c2944168e559114ac2cc22b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_140512b470ce4c7e969f918e1bd74808.setIcon(icon_689607704c2944168e559114ac2cc22b);
+        
+    
+        var popup_7a12dded2fe646129cffdf770bc18ce4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bee9e0dcc69243e7a8950ff4fdc199f8 = $(`<div id="html_bee9e0dcc69243e7a8950ff4fdc199f8" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CL1g2cTFNat/">https://www.instagram.com/p/CL1g2cTFNat/</a></div>`)[0];
+            popup_7a12dded2fe646129cffdf770bc18ce4.setContent(html_bee9e0dcc69243e7a8950ff4fdc199f8);
+        
+
+        marker_140512b470ce4c7e969f918e1bd74808.bindPopup(popup_7a12dded2fe646129cffdf770bc18ce4)
+        ;
+
+        
+    
+    
+            marker_140512b470ce4c7e969f918e1bd74808.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0130af24d80c46c49dfc6f597ee16739 = L.marker(
+                [1.30041423392971, 103.852292796726],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_b6e356beb02f40c688c9ebc1103e6649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0130af24d80c46c49dfc6f597ee16739.setIcon(icon_b6e356beb02f40c688c9ebc1103e6649);
+        
+    
+        var popup_52105ed5d5d14932bb4e2726a2d3798e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77b35df6b48d4ec28c04d6adcd2a6d54 = $(`<div id="html_77b35df6b48d4ec28c04d6adcd2a6d54" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CLdWqDrFJrK/">https://www.instagram.com/p/CLdWqDrFJrK/</a></div>`)[0];
+            popup_52105ed5d5d14932bb4e2726a2d3798e.setContent(html_77b35df6b48d4ec28c04d6adcd2a6d54);
+        
+
+        marker_0130af24d80c46c49dfc6f597ee16739.bindPopup(popup_52105ed5d5d14932bb4e2726a2d3798e)
+        ;
+
+        
+    
+    
+            marker_0130af24d80c46c49dfc6f597ee16739.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b19ffe37581418b949d6ea7fb7a57ae = L.marker(
+                [1.29981639897451, 103.855923558787],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_cf4c7929ae4b4a208be52afc2f937cea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0b19ffe37581418b949d6ea7fb7a57ae.setIcon(icon_cf4c7929ae4b4a208be52afc2f937cea);
+        
+    
+        var popup_09f608b337f443808b20ba07ae642fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f26b5f130c7d42deba5937ceaccbd485 = $(`<div id="html_f26b5f130c7d42deba5937ceaccbd485" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CLRD8RBFDF4/">https://www.instagram.com/p/CLRD8RBFDF4/</a></div>`)[0];
+            popup_09f608b337f443808b20ba07ae642fc1.setContent(html_f26b5f130c7d42deba5937ceaccbd485);
+        
+
+        marker_0b19ffe37581418b949d6ea7fb7a57ae.bindPopup(popup_09f608b337f443808b20ba07ae642fc1)
+        ;
+
+        
+    
+    
+            marker_0b19ffe37581418b949d6ea7fb7a57ae.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9d3c8911d3843358e924b940f05d64d = L.marker(
+                [1.32161991390197, 103.848863762617],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_b7d325ae62e94a9c99b3afec5f98d0d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b9d3c8911d3843358e924b940f05d64d.setIcon(icon_b7d325ae62e94a9c99b3afec5f98d0d2);
+        
+    
+        var popup_9113573fb604460eaec8b082753ae8f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_472928a91aa84dcb9797e7641c56c542 = $(`<div id="html_472928a91aa84dcb9797e7641c56c542" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CK8U2fhlpey/">https://www.instagram.com/p/CK8U2fhlpey/</a></div>`)[0];
+            popup_9113573fb604460eaec8b082753ae8f5.setContent(html_472928a91aa84dcb9797e7641c56c542);
+        
+
+        marker_b9d3c8911d3843358e924b940f05d64d.bindPopup(popup_9113573fb604460eaec8b082753ae8f5)
+        ;
+
+        
+    
+    
+            marker_b9d3c8911d3843358e924b940f05d64d.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39011d9915bf4c1dbf19e965d5827b66 = L.marker(
+                [1.29065533840368, 103.851708013559],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_8d6476ed31e74dc1b6b50b3b87e5fd4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_39011d9915bf4c1dbf19e965d5827b66.setIcon(icon_8d6476ed31e74dc1b6b50b3b87e5fd4c);
+        
+    
+        var popup_04c54aeebb1f4ba2a27034ad409416b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20b64e614ddb4c728f525da3a8d65e19 = $(`<div id="html_20b64e614ddb4c728f525da3a8d65e19" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CKsURW2F3R3/">https://www.instagram.com/p/CKsURW2F3R3/</a></div>`)[0];
+            popup_04c54aeebb1f4ba2a27034ad409416b4.setContent(html_20b64e614ddb4c728f525da3a8d65e19);
+        
+
+        marker_39011d9915bf4c1dbf19e965d5827b66.bindPopup(popup_04c54aeebb1f4ba2a27034ad409416b4)
+        ;
+
+        
+    
+    
+            marker_39011d9915bf4c1dbf19e965d5827b66.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3d87f75a16041338a31a2da199a54d4 = L.marker(
+                [1.32988651708771, 103.854213740191],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_632224fc3e93470d86fb0c6dd6e2b4ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d3d87f75a16041338a31a2da199a54d4.setIcon(icon_632224fc3e93470d86fb0c6dd6e2b4ea);
+        
+    
+        var popup_52d4b5a717554191a9bcec1f36ec90bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83a006085bc74978936e702716410200 = $(`<div id="html_83a006085bc74978936e702716410200" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CKKy0s5F-w4/">https://www.instagram.com/p/CKKy0s5F-w4/</a></div>`)[0];
+            popup_52d4b5a717554191a9bcec1f36ec90bf.setContent(html_83a006085bc74978936e702716410200);
+        
+
+        marker_d3d87f75a16041338a31a2da199a54d4.bindPopup(popup_52d4b5a717554191a9bcec1f36ec90bf)
+        ;
+
+        
+    
+    
+            marker_d3d87f75a16041338a31a2da199a54d4.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02103ef5859942bcacf6d1aeb470373c = L.marker(
+                [1.30041423392971, 103.852292796726],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_e776c5c2561e484e93ede6a483af872d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02103ef5859942bcacf6d1aeb470373c.setIcon(icon_e776c5c2561e484e93ede6a483af872d);
+        
+    
+        var popup_cdad321c59db454897dd1c3901b004a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d4ad2fce2bd4b20a069cdb80c5ad3ff = $(`<div id="html_5d4ad2fce2bd4b20a069cdb80c5ad3ff" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CKF-iM2lG0y/">https://www.instagram.com/p/CKF-iM2lG0y/</a></div>`)[0];
+            popup_cdad321c59db454897dd1c3901b004a6.setContent(html_5d4ad2fce2bd4b20a069cdb80c5ad3ff);
+        
+
+        marker_02103ef5859942bcacf6d1aeb470373c.bindPopup(popup_cdad321c59db454897dd1c3901b004a6)
+        ;
+
+        
+    
+    
+            marker_02103ef5859942bcacf6d1aeb470373c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bba9ff7df96446a9a25869a47841146 = L.marker(
+                [1.28332249857386, 103.857629111139],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_1d0f741e27cd4ea79d5cafbc55bdb273 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3bba9ff7df96446a9a25869a47841146.setIcon(icon_1d0f741e27cd4ea79d5cafbc55bdb273);
+        
+    
+        var popup_2c489917e4e74511b26ab776c5df3de7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b3d313292b74001babfa8d1eb332ae6 = $(`<div id="html_1b3d313292b74001babfa8d1eb332ae6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CJnCp-HlJZG/">https://www.instagram.com/p/CJnCp-HlJZG/</a></div>`)[0];
+            popup_2c489917e4e74511b26ab776c5df3de7.setContent(html_1b3d313292b74001babfa8d1eb332ae6);
+        
+
+        marker_3bba9ff7df96446a9a25869a47841146.bindPopup(popup_2c489917e4e74511b26ab776c5df3de7)
+        ;
+
+        
+    
+    
+            marker_3bba9ff7df96446a9a25869a47841146.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db276d64522f4c5b8ff562ac7784a7b1 = L.marker(
+                [1.27870608494088, 103.848418970551],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_c8d6dc0ae7394a68b171e247f7e1c601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_db276d64522f4c5b8ff562ac7784a7b1.setIcon(icon_c8d6dc0ae7394a68b171e247f7e1c601);
+        
+    
+        var popup_d077cf1f7d6f47bf95017158d8d5e9a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fecb157901e74cb09ef0e8c93bf48564 = $(`<div id="html_fecb157901e74cb09ef0e8c93bf48564" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CJfWVfNFEIX/">https://www.instagram.com/p/CJfWVfNFEIX/</a></div>`)[0];
+            popup_d077cf1f7d6f47bf95017158d8d5e9a4.setContent(html_fecb157901e74cb09ef0e8c93bf48564);
+        
+
+        marker_db276d64522f4c5b8ff562ac7784a7b1.bindPopup(popup_d077cf1f7d6f47bf95017158d8d5e9a4)
+        ;
+
+        
+    
+    
+            marker_db276d64522f4c5b8ff562ac7784a7b1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f7bb2b13ac145c69a12a6382e5b1cf7 = L.marker(
+                [1.32694504484324, 103.846554377679],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_2372bde09ec642079e1764cc17d4625f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f7bb2b13ac145c69a12a6382e5b1cf7.setIcon(icon_2372bde09ec642079e1764cc17d4625f);
+        
+    
+        var popup_71d752252f374fc9b9fbeb75481becc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61857474375d43469e6abfbbb338e1a3 = $(`<div id="html_61857474375d43469e6abfbbb338e1a3" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CJKRs-HFaBg/">https://www.instagram.com/p/CJKRs-HFaBg/</a></div>`)[0];
+            popup_71d752252f374fc9b9fbeb75481becc8.setContent(html_61857474375d43469e6abfbbb338e1a3);
+        
+
+        marker_3f7bb2b13ac145c69a12a6382e5b1cf7.bindPopup(popup_71d752252f374fc9b9fbeb75481becc8)
+        ;
+
+        
+    
+    
+            marker_3f7bb2b13ac145c69a12a6382e5b1cf7.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52ce34d9429b44c9821856afe5326422 = L.marker(
+                [1.30242417189411, 103.834676124723],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_545f4158d52848ffb73d8912b4d31e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_52ce34d9429b44c9821856afe5326422.setIcon(icon_545f4158d52848ffb73d8912b4d31e5d);
+        
+    
+        var popup_819291ee4a2d418485578f82e37785c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b10f41c25bb34db59e8dac61ff90619e = $(`<div id="html_b10f41c25bb34db59e8dac61ff90619e" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CIud1oTlfwd/">https://www.instagram.com/p/CIud1oTlfwd/</a></div>`)[0];
+            popup_819291ee4a2d418485578f82e37785c4.setContent(html_b10f41c25bb34db59e8dac61ff90619e);
+        
+
+        marker_52ce34d9429b44c9821856afe5326422.bindPopup(popup_819291ee4a2d418485578f82e37785c4)
+        ;
+
+        
+    
+    
+            marker_52ce34d9429b44c9821856afe5326422.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cc0e8a880664eefa68f1e0861a597f1 = L.marker(
+                [1.35556855805419, 103.985852088983],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_547911c99b62437d95fd56df18d593ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9cc0e8a880664eefa68f1e0861a597f1.setIcon(icon_547911c99b62437d95fd56df18d593ac);
+        
+    
+        var popup_b5a07650dc43490b8cffafecc2003b2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_671dec5ef9834133b3680a6b79a2b23e = $(`<div id="html_671dec5ef9834133b3680a6b79a2b23e" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CIc2qGBFKZH/">https://www.instagram.com/p/CIc2qGBFKZH/</a></div>`)[0];
+            popup_b5a07650dc43490b8cffafecc2003b2c.setContent(html_671dec5ef9834133b3680a6b79a2b23e);
+        
+
+        marker_9cc0e8a880664eefa68f1e0861a597f1.bindPopup(popup_b5a07650dc43490b8cffafecc2003b2c)
+        ;
+
+        
+    
+    
+            marker_9cc0e8a880664eefa68f1e0861a597f1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73521e6875ff41bb8cc2473f59fffc6a = L.marker(
+                [1.30206450556085, 103.836340953476],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_9fe235c6b7394eb5ae1328b658a4ff43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_73521e6875ff41bb8cc2473f59fffc6a.setIcon(icon_9fe235c6b7394eb5ae1328b658a4ff43);
+        
+    
+        var popup_10b3de3b3e444a989e4e5ee1f7196fc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_888b5ba1372148d38fa74350144c3334 = $(`<div id="html_888b5ba1372148d38fa74350144c3334" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CH7DA0tFOGl/">https://www.instagram.com/p/CH7DA0tFOGl/</a></div>`)[0];
+            popup_10b3de3b3e444a989e4e5ee1f7196fc5.setContent(html_888b5ba1372148d38fa74350144c3334);
+        
+
+        marker_73521e6875ff41bb8cc2473f59fffc6a.bindPopup(popup_10b3de3b3e444a989e4e5ee1f7196fc5)
+        ;
+
+        
+    
+    
+            marker_73521e6875ff41bb8cc2473f59fffc6a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1fcbb509fbb415082c7494a19d9ed0f = L.marker(
+                [1.35948337264387, 103.833963930413],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_01a082de349d4e2e86eb5e07aea8239c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f1fcbb509fbb415082c7494a19d9ed0f.setIcon(icon_01a082de349d4e2e86eb5e07aea8239c);
+        
+    
+        var popup_35a8ecd5c5654f64966ed0f0ab238fb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bafd7d3139174d578a082cd3cdd74255 = $(`<div id="html_bafd7d3139174d578a082cd3cdd74255" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CH1p1jIl1TP/">https://www.instagram.com/p/CH1p1jIl1TP/</a></div>`)[0];
+            popup_35a8ecd5c5654f64966ed0f0ab238fb2.setContent(html_bafd7d3139174d578a082cd3cdd74255);
+        
+
+        marker_f1fcbb509fbb415082c7494a19d9ed0f.bindPopup(popup_35a8ecd5c5654f64966ed0f0ab238fb2)
+        ;
+
+        
+    
+    
+            marker_f1fcbb509fbb415082c7494a19d9ed0f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7ad32c8af744b4eb9a8d0e804ae8015 = L.marker(
+                [1.32328917067445, 103.855735557842],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_8264e2e591be494ca005785b0c288aef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e7ad32c8af744b4eb9a8d0e804ae8015.setIcon(icon_8264e2e591be494ca005785b0c288aef);
+        
+    
+        var popup_708095a582b141ea95bc3c3547cdedf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a516dfa20af4c7f9e8e86f790ff5aff = $(`<div id="html_5a516dfa20af4c7f9e8e86f790ff5aff" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CG_fFwJlPSi/">https://www.instagram.com/p/CG_fFwJlPSi/</a></div>`)[0];
+            popup_708095a582b141ea95bc3c3547cdedf9.setContent(html_5a516dfa20af4c7f9e8e86f790ff5aff);
+        
+
+        marker_e7ad32c8af744b4eb9a8d0e804ae8015.bindPopup(popup_708095a582b141ea95bc3c3547cdedf9)
+        ;
+
+        
+    
+    
+            marker_e7ad32c8af744b4eb9a8d0e804ae8015.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cd92019ddf74826aaab34297e0cefb3 = L.marker(
+                [1.35327556197146, 103.834836368264],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_99dd574ffbce434ca55530ecc14df94d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2cd92019ddf74826aaab34297e0cefb3.setIcon(icon_99dd574ffbce434ca55530ecc14df94d);
+        
+    
+        var popup_5085e127456a4f37bb524be5f3433115 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_580f639e87a0424986aec6c005b36550 = $(`<div id="html_580f639e87a0424986aec6c005b36550" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CG6qGnOFPVt/">https://www.instagram.com/p/CG6qGnOFPVt/</a></div>`)[0];
+            popup_5085e127456a4f37bb524be5f3433115.setContent(html_580f639e87a0424986aec6c005b36550);
+        
+
+        marker_2cd92019ddf74826aaab34297e0cefb3.bindPopup(popup_5085e127456a4f37bb524be5f3433115)
+        ;
+
+        
+    
+    
+            marker_2cd92019ddf74826aaab34297e0cefb3.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b29abee98a1477ab459abe399152d4f = L.marker(
+                [1.31756115921, 103.892836694432],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_bef18c920f8243ef982c72c6aa0be93e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0b29abee98a1477ab459abe399152d4f.setIcon(icon_bef18c920f8243ef982c72c6aa0be93e);
+        
+    
+        var popup_e8c329888d5a435693c0967cd4c96208 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1468859ca32542278b00b76dd6b8b167 = $(`<div id="html_1468859ca32542278b00b76dd6b8b167" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CGhOjXml2yD/">https://www.instagram.com/p/CGhOjXml2yD/</a></div>`)[0];
+            popup_e8c329888d5a435693c0967cd4c96208.setContent(html_1468859ca32542278b00b76dd6b8b167);
+        
+
+        marker_0b29abee98a1477ab459abe399152d4f.bindPopup(popup_e8c329888d5a435693c0967cd4c96208)
+        ;
+
+        
+    
+    
+            marker_0b29abee98a1477ab459abe399152d4f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c89235dae85f45cb9e410286b75290e1 = L.marker(
+                [1.29881671350692, 103.839470015966],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_1b88c31ecdeb43648a72c5bc0ae45c12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c89235dae85f45cb9e410286b75290e1.setIcon(icon_1b88c31ecdeb43648a72c5bc0ae45c12);
+        
+    
+        var popup_69921791fb624e9bb2bf7327ae83e671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4389aaede41b492f81d8c50bfac5aa54 = $(`<div id="html_4389aaede41b492f81d8c50bfac5aa54" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CGb-oITF45b/">https://www.instagram.com/p/CGb-oITF45b/</a></div>`)[0];
+            popup_69921791fb624e9bb2bf7327ae83e671.setContent(html_4389aaede41b492f81d8c50bfac5aa54);
+        
+
+        marker_c89235dae85f45cb9e410286b75290e1.bindPopup(popup_69921791fb624e9bb2bf7327ae83e671)
+        ;
+
+        
+    
+    
+            marker_c89235dae85f45cb9e410286b75290e1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7eac73e967784a0eacf59b2cc2217fe7 = L.marker(
+                [1.31157721938196, 103.859941095391],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_39e4e38d08d14773940c512b8a5aa728 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7eac73e967784a0eacf59b2cc2217fe7.setIcon(icon_39e4e38d08d14773940c512b8a5aa728);
+        
+    
+        var popup_904093fa1b74415bac74e118745b0ae2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50696d796c204c5b8a2422e429ec5db5 = $(`<div id="html_50696d796c204c5b8a2422e429ec5db5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CF7cWX5F72S/">https://www.instagram.com/p/CF7cWX5F72S/</a></div>`)[0];
+            popup_904093fa1b74415bac74e118745b0ae2.setContent(html_50696d796c204c5b8a2422e429ec5db5);
+        
+
+        marker_7eac73e967784a0eacf59b2cc2217fe7.bindPopup(popup_904093fa1b74415bac74e118745b0ae2)
+        ;
+
+        
+    
+    
+            marker_7eac73e967784a0eacf59b2cc2217fe7.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c022bf70c74d4e138dfea1ea879aed7c = L.marker(
+                [1.26430476483158, 103.822308649643],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_82736294711447ff84b1126481007154 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c022bf70c74d4e138dfea1ea879aed7c.setIcon(icon_82736294711447ff84b1126481007154);
+        
+    
+        var popup_4dc1508c369a4e9e8a71a2777125e4aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55094bf634b24717aa135046fafa5071 = $(`<div id="html_55094bf634b24717aa135046fafa5071" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CFi1zQrFsEK/">https://www.instagram.com/p/CFi1zQrFsEK/</a></div>`)[0];
+            popup_4dc1508c369a4e9e8a71a2777125e4aa.setContent(html_55094bf634b24717aa135046fafa5071);
+        
+
+        marker_c022bf70c74d4e138dfea1ea879aed7c.bindPopup(popup_4dc1508c369a4e9e8a71a2777125e4aa)
+        ;
+
+        
+    
+    
+            marker_c022bf70c74d4e138dfea1ea879aed7c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b0f7e7c8e274a54a65ee06d7c013b30 = L.marker(
+                [1.3042977039481, 103.854106342279],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_6e613ebb4e594f3685d0ca3639d87faa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8b0f7e7c8e274a54a65ee06d7c013b30.setIcon(icon_6e613ebb4e594f3685d0ca3639d87faa);
+        
+    
+        var popup_27a80f08ba464f5da81580349cf65ea9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1489e708c8f4a33821f07ceaa64714b = $(`<div id="html_e1489e708c8f4a33821f07ceaa64714b" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEqdohBFNvm/">https://www.instagram.com/p/CEqdohBFNvm/</a></div>`)[0];
+            popup_27a80f08ba464f5da81580349cf65ea9.setContent(html_e1489e708c8f4a33821f07ceaa64714b);
+        
+
+        marker_8b0f7e7c8e274a54a65ee06d7c013b30.bindPopup(popup_27a80f08ba464f5da81580349cf65ea9)
+        ;
+
+        
+    
+    
+            marker_8b0f7e7c8e274a54a65ee06d7c013b30.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6d039084fec45e097d11af0f134913f = L.marker(
+                [1.29145526802576, 103.857007335679],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_1c337339928645119df3ccdc4568904a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f6d039084fec45e097d11af0f134913f.setIcon(icon_1c337339928645119df3ccdc4568904a);
+        
+    
+        var popup_4b24b84374514dd994d7e579be781618 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e0f85e74a424aecacc383233d16f42c = $(`<div id="html_6e0f85e74a424aecacc383233d16f42c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEdz4r3FRbw/">https://www.instagram.com/p/CEdz4r3FRbw/</a></div>`)[0];
+            popup_4b24b84374514dd994d7e579be781618.setContent(html_6e0f85e74a424aecacc383233d16f42c);
+        
+
+        marker_f6d039084fec45e097d11af0f134913f.bindPopup(popup_4b24b84374514dd994d7e579be781618)
+        ;
+
+        
+    
+    
+            marker_f6d039084fec45e097d11af0f134913f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ece116769857449c9baf978b2dd64c38 = L.marker(
+                [1.30878949399241, 103.792695569227],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_03bf06a6aa554a0a8415a4926d61a608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ece116769857449c9baf978b2dd64c38.setIcon(icon_03bf06a6aa554a0a8415a4926d61a608);
+        
+    
+        var popup_d8363f86dff44677a703ac45efc10337 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd8917b1b35b4dc796f62e05ea97b23d = $(`<div id="html_cd8917b1b35b4dc796f62e05ea97b23d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEUDd5pFsuK/">https://www.instagram.com/p/CEUDd5pFsuK/</a></div>`)[0];
+            popup_d8363f86dff44677a703ac45efc10337.setContent(html_cd8917b1b35b4dc796f62e05ea97b23d);
+        
+
+        marker_ece116769857449c9baf978b2dd64c38.bindPopup(popup_d8363f86dff44677a703ac45efc10337)
+        ;
+
+        
+    
+    
+            marker_ece116769857449c9baf978b2dd64c38.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b596b82ffa244889d329d4fa436c46e = L.marker(
+                [1.29629320863563, 103.854675582955],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_4e5d85ed72c4475fba9abbb707fe6a1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7b596b82ffa244889d329d4fa436c46e.setIcon(icon_4e5d85ed72c4475fba9abbb707fe6a1e);
+        
+    
+        var popup_1fd5149e985a494d80bfb74477fa2a8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de0ea41b60a84ecfb8e4e09700955716 = $(`<div id="html_de0ea41b60a84ecfb8e4e09700955716" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEN64K1FZ3z/">https://www.instagram.com/p/CEN64K1FZ3z/</a></div>`)[0];
+            popup_1fd5149e985a494d80bfb74477fa2a8f.setContent(html_de0ea41b60a84ecfb8e4e09700955716);
+        
+
+        marker_7b596b82ffa244889d329d4fa436c46e.bindPopup(popup_1fd5149e985a494d80bfb74477fa2a8f)
+        ;
+
+        
+    
+    
+            marker_7b596b82ffa244889d329d4fa436c46e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_073e76abf39846f396ff52a9000f6474 = L.marker(
+                [1.28905634657056, 103.827502108439],
+                {}
+            ).addTo(marker_cluster_fd0a22041bd641b685f0bc1b7689c37e);
+        
+    
+            var icon_6ec07aba465a44c7a21932191195e155 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_073e76abf39846f396ff52a9000f6474.setIcon(icon_6ec07aba465a44c7a21932191195e155);
+        
+    
+        var popup_70fda5ccbb634ab3967cf8173086c2d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cca64dd02a14cc0a1176292ed5cf82d = $(`<div id="html_7cca64dd02a14cc0a1176292ed5cf82d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CDvW3SrFXWd/">https://www.instagram.com/p/CDvW3SrFXWd/</a></div>`)[0];
+            popup_70fda5ccbb634ab3967cf8173086c2d5.setContent(html_7cca64dd02a14cc0a1176292ed5cf82d);
+        
+
+        marker_073e76abf39846f396ff52a9000f6474.bindPopup(popup_70fda5ccbb634ab3967cf8173086c2d5)
+        ;
+
+        
+    
+    
+            marker_073e76abf39846f396ff52a9000f6474.bindTooltip(
                 `<div>
                      Click for link!
                  </div>`,
