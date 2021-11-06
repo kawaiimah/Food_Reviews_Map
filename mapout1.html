@@ -1,0 +1,3675 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9a5aaa124204c31bd006cf07a48124a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f9a5aaa124204c31bd006cf07a48124a" ></div>
+        
+</body>
+<script>    
+    
+            var map_f9a5aaa124204c31bd006cf07a48124a = L.map(
+                "map_f9a5aaa124204c31bd006cf07a48124a",
+                {
+                    center: [1.33, 103.84],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15deaafe97f94a12b620664a8fd83f7f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f9a5aaa124204c31bd006cf07a48124a);
+        
+    
+            var marker_cluster_ff7e57cbf4f84434979e8042a64210ee = L.markerClusterGroup(
+                {}
+            );
+            marker_cluster_ff7e57cbf4f84434979e8042a64210ee.options.iconCreateFunction =
+                function(cluster) {
+    var childCount = cluster.getChildCount(); 
+    var c = ' marker-cluster-large';
+    return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
+    };
+            map_f9a5aaa124204c31bd006cf07a48124a.addLayer(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var marker_3ec4f101ab8a4282a6f437353dda9930 = L.marker(
+                [1.28937099358897, 103.836603810879],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_98cc9bcf6bf1438b9e570c2722e61e61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ec4f101ab8a4282a6f437353dda9930.setIcon(icon_98cc9bcf6bf1438b9e570c2722e61e61);
+        
+    
+        var popup_4a8c53445c584d0f841f80e91d075dd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfd8806599d34308a159cb9f055d74a7 = $(`<div id="html_bfd8806599d34308a159cb9f055d74a7" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CVmorRQvVrV/">Best Brew Singapore</a></div>`)[0];
+            popup_4a8c53445c584d0f841f80e91d075dd6.setContent(html_bfd8806599d34308a159cb9f055d74a7);
+        
+
+        marker_3ec4f101ab8a4282a6f437353dda9930.bindPopup(popup_4a8c53445c584d0f841f80e91d075dd6)
+        ;
+
+        
+    
+    
+            marker_3ec4f101ab8a4282a6f437353dda9930.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5bc07f0836f4c128c9d5de139c36116 = L.marker(
+                [1.29846963655747, 103.85486703715],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_263a08e6892044eda012b814835cb6b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b5bc07f0836f4c128c9d5de139c36116.setIcon(icon_263a08e6892044eda012b814835cb6b0);
+        
+    
+        var popup_7ca6b6d432c54fa3a939b74d7bc939be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddf010c3184c4530984abd040ffe588a = $(`<div id="html_ddf010c3184c4530984abd040ffe588a" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CVDNCDBBvJH/">Hey! Yakiniku</a></div>`)[0];
+            popup_7ca6b6d432c54fa3a939b74d7bc939be.setContent(html_ddf010c3184c4530984abd040ffe588a);
+        
+
+        marker_b5bc07f0836f4c128c9d5de139c36116.bindPopup(popup_7ca6b6d432c54fa3a939b74d7bc939be)
+        ;
+
+        
+    
+    
+            marker_b5bc07f0836f4c128c9d5de139c36116.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5376c2c690964aad86290fb931597220 = L.marker(
+                [1.34404445156372, 103.750294500884],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_7db3b30cfbe045148698572ed3cc5be7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5376c2c690964aad86290fb931597220.setIcon(icon_7db3b30cfbe045148698572ed3cc5be7);
+        
+    
+        var popup_5b48c131805f4e369c5eeb78adc6cfcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_710a4de71aaa437aa612960b28024c45 = $(`<div id="html_710a4de71aaa437aa612960b28024c45" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUbpU8uPDAz/">The Sapling</a></div>`)[0];
+            popup_5b48c131805f4e369c5eeb78adc6cfcc.setContent(html_710a4de71aaa437aa612960b28024c45);
+        
+
+        marker_5376c2c690964aad86290fb931597220.bindPopup(popup_5b48c131805f4e369c5eeb78adc6cfcc)
+        ;
+
+        
+    
+    
+            marker_5376c2c690964aad86290fb931597220.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90af7b2a358943329e13fdec6c44733c = L.marker(
+                [1.31996748439185, 103.843850630993],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a8fb6f91ce3f41c8b2fc1c8cfe2719e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_90af7b2a358943329e13fdec6c44733c.setIcon(icon_a8fb6f91ce3f41c8b2fc1c8cfe2719e2);
+        
+    
+        var popup_d2ad79ea58c841d2a782b70196b2a2c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cb8a3a75a0049819b9af8ec7ca12c32 = $(`<div id="html_9cb8a3a75a0049819b9af8ec7ca12c32" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUm5IwzhNUF/">City Donut</a></div>`)[0];
+            popup_d2ad79ea58c841d2a782b70196b2a2c2.setContent(html_9cb8a3a75a0049819b9af8ec7ca12c32);
+        
+
+        marker_90af7b2a358943329e13fdec6c44733c.bindPopup(popup_d2ad79ea58c841d2a782b70196b2a2c2)
+        ;
+
+        
+    
+    
+            marker_90af7b2a358943329e13fdec6c44733c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f88f46e1890b4c8389142fe203cee351 = L.marker(
+                [1.32044103104797, 103.844192628979],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_35bceef897d6478c835a3436cf13af03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f88f46e1890b4c8389142fe203cee351.setIcon(icon_35bceef897d6478c835a3436cf13af03);
+        
+    
+        var popup_a2612588f0eb4cfbb287373a2149b3ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c92c5d1ed2a540da808c148232347dd1 = $(`<div id="html_c92c5d1ed2a540da808c148232347dd1" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CUCRRDHvha8/">Sukiya Novena Square 2</a></div>`)[0];
+            popup_a2612588f0eb4cfbb287373a2149b3ae.setContent(html_c92c5d1ed2a540da808c148232347dd1);
+        
+
+        marker_f88f46e1890b4c8389142fe203cee351.bindPopup(popup_a2612588f0eb4cfbb287373a2149b3ae)
+        ;
+
+        
+    
+    
+            marker_f88f46e1890b4c8389142fe203cee351.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c1038a8629147209033b13444f63275 = L.marker(
+                [1.30665484543191, 103.829588045188],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_ba894805cb48418c95c78c2407e8519b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c1038a8629147209033b13444f63275.setIcon(icon_ba894805cb48418c95c78c2407e8519b);
+        
+    
+        var popup_7990097285bf460baa6abb8fbf4c5e52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a15fecdbc3994a34a1aa2048113f1446 = $(`<div id="html_a15fecdbc3994a34a1aa2048113f1446" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CTy1Ugbh8Lw/">PS.Cafe at Palais Renaissance</a></div>`)[0];
+            popup_7990097285bf460baa6abb8fbf4c5e52.setContent(html_a15fecdbc3994a34a1aa2048113f1446);
+        
+
+        marker_2c1038a8629147209033b13444f63275.bindPopup(popup_7990097285bf460baa6abb8fbf4c5e52)
+        ;
+
+        
+    
+    
+            marker_2c1038a8629147209033b13444f63275.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24f9845cb85c48ebaf246069be98b5fe = L.marker(
+                [1.3274754002115, 103.753564699613],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_ba193e6cab9147ceb3db2c68db19974b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24f9845cb85c48ebaf246069be98b5fe.setIcon(icon_ba193e6cab9147ceb3db2c68db19974b);
+        
+    
+        var popup_5dde4de9cc8940f2bee9ad079b928b82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25e01eddbc9f45a892db36248475dad5 = $(`<div id="html_25e01eddbc9f45a892db36248475dad5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CTUe5yHPr0H/">TOBY'S The Dessert Asylum</a></div>`)[0];
+            popup_5dde4de9cc8940f2bee9ad079b928b82.setContent(html_25e01eddbc9f45a892db36248475dad5);
+        
+
+        marker_24f9845cb85c48ebaf246069be98b5fe.bindPopup(popup_5dde4de9cc8940f2bee9ad079b928b82)
+        ;
+
+        
+    
+    
+            marker_24f9845cb85c48ebaf246069be98b5fe.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e901449834614901ab21ed7531fe09f2 = L.marker(
+                [1.31139349427341, 103.856487111691],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_1fb36b471fa3403c8ccffc33ee539bb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e901449834614901ab21ed7531fe09f2.setIcon(icon_1fb36b471fa3403c8ccffc33ee539bb1);
+        
+    
+        var popup_333c8263a6104573b5f9ace8345735cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff0566c88ad64adba757a2a588e07e9d = $(`<div id="html_ff0566c88ad64adba757a2a588e07e9d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CRYe7KznaKz/">Watami Japanese Casual Restaurant Singapore</a></div>`)[0];
+            popup_333c8263a6104573b5f9ace8345735cb.setContent(html_ff0566c88ad64adba757a2a588e07e9d);
+        
+
+        marker_e901449834614901ab21ed7531fe09f2.bindPopup(popup_333c8263a6104573b5f9ace8345735cb)
+        ;
+
+        
+    
+    
+            marker_e901449834614901ab21ed7531fe09f2.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b81f593bbad4a16ba08b4ba1366be0c = L.marker(
+                [1.32100020851204, 103.868321383856],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_fd4ed154091d4fcdafc55a593018a16a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b81f593bbad4a16ba08b4ba1366be0c.setIcon(icon_fd4ed154091d4fcdafc55a593018a16a);
+        
+    
+        var popup_6b052521ed1b48388296d78376065861 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4c0298edd5d46f481b72c546ab7c0b6 = $(`<div id="html_e4c0298edd5d46f481b72c546ab7c0b6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CRGWVMpnyN2/">Feng Xiang Klang Bak Kut Teh</a></div>`)[0];
+            popup_6b052521ed1b48388296d78376065861.setContent(html_e4c0298edd5d46f481b72c546ab7c0b6);
+        
+
+        marker_9b81f593bbad4a16ba08b4ba1366be0c.bindPopup(popup_6b052521ed1b48388296d78376065861)
+        ;
+
+        
+    
+    
+            marker_9b81f593bbad4a16ba08b4ba1366be0c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d51cb1035e69409b91032842e62311b0 = L.marker(
+                [1.31568827087057, 103.816190606231],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_644bb1b62e3e411584685b3819122689 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d51cb1035e69409b91032842e62311b0.setIcon(icon_644bb1b62e3e411584685b3819122689);
+        
+    
+        var popup_defad2e849834599abfc83f4830be077 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc8dc0b67efb4eadbd9850a786edb68c = $(`<div id="html_cc8dc0b67efb4eadbd9850a786edb68c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CQskeArHcC2/">Casa Verde at Singapore Botanic Gardens</a></div>`)[0];
+            popup_defad2e849834599abfc83f4830be077.setContent(html_cc8dc0b67efb4eadbd9850a786edb68c);
+        
+
+        marker_d51cb1035e69409b91032842e62311b0.bindPopup(popup_defad2e849834599abfc83f4830be077)
+        ;
+
+        
+    
+    
+            marker_d51cb1035e69409b91032842e62311b0.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1bf1e88d1f24c4793a588b29d240e4f = L.marker(
+                [1.3002867755265, 103.837420249281],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_75d9fa39ae1740a58a4243414f78b13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c1bf1e88d1f24c4793a588b29d240e4f.setIcon(icon_75d9fa39ae1740a58a4243414f78b13e);
+        
+    
+        var popup_96fa2472a0a646caa4bfafcc577582ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f753555f748340f79e155bf2e2fc2781 = $(`<div id="html_f753555f748340f79e155bf2e2fc2781" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CQAdKbOH-lQ/">So Good Char Chan Tang Triple one Somerset</a></div>`)[0];
+            popup_96fa2472a0a646caa4bfafcc577582ae.setContent(html_f753555f748340f79e155bf2e2fc2781);
+        
+
+        marker_c1bf1e88d1f24c4793a588b29d240e4f.bindPopup(popup_96fa2472a0a646caa4bfafcc577582ae)
+        ;
+
+        
+    
+    
+            marker_c1bf1e88d1f24c4793a588b29d240e4f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6980cc7a5d7647c3870ff94a0b568800 = L.marker(
+                [1.30691410570767, 103.856086249155],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a977a54e3d6f4c91a6cfbe6ba8e77249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6980cc7a5d7647c3870ff94a0b568800.setIcon(icon_a977a54e3d6f4c91a6cfbe6ba8e77249);
+        
+    
+        var popup_1ef6bb53245a4d26878fb564c60a45af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9110cc2bd2644f6aa5b7856324326a5 = $(`<div id="html_a9110cc2bd2644f6aa5b7856324326a5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CPPnlxYng4N/">Hand in Hand Restaurant</a></div>`)[0];
+            popup_1ef6bb53245a4d26878fb564c60a45af.setContent(html_a9110cc2bd2644f6aa5b7856324326a5);
+        
+
+        marker_6980cc7a5d7647c3870ff94a0b568800.bindPopup(popup_1ef6bb53245a4d26878fb564c60a45af)
+        ;
+
+        
+    
+    
+            marker_6980cc7a5d7647c3870ff94a0b568800.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccef64d3058447f1bc6eb6884864efdf = L.marker(
+                [1.31540016726387, 103.883548120464],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_f582dafa17d44f9fb4d81cd20fc37282 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ccef64d3058447f1bc6eb6884864efdf.setIcon(icon_f582dafa17d44f9fb4d81cd20fc37282);
+        
+    
+        var popup_85bf9de4f2184ee5ae68918ae2592629 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4af08c3bbd34f539d82a7163edfa7ae = $(`<div id="html_c4af08c3bbd34f539d82a7163edfa7ae" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COo404mF7MC/">Ho Kee Pau</a></div>`)[0];
+            popup_85bf9de4f2184ee5ae68918ae2592629.setContent(html_c4af08c3bbd34f539d82a7163edfa7ae);
+        
+
+        marker_ccef64d3058447f1bc6eb6884864efdf.bindPopup(popup_85bf9de4f2184ee5ae68918ae2592629)
+        ;
+
+        
+    
+    
+            marker_ccef64d3058447f1bc6eb6884864efdf.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c00867293a54462e856c473804d23b3b = L.marker(
+                [1.28006668363649, 103.841377725021],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_cb75c6618eb4482388e8e76c91286a36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c00867293a54462e856c473804d23b3b.setIcon(icon_cb75c6618eb4482388e8e76c91286a36);
+        
+    
+        var popup_1fc87d6259934d14b806a48dcd56c2d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5e56b71b8d5491db8d33e8a9ce3df73 = $(`<div id="html_b5e56b71b8d5491db8d33e8a9ce3df73" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COkEupBFn_C/">Keong Saik Bakery</a></div>`)[0];
+            popup_1fc87d6259934d14b806a48dcd56c2d8.setContent(html_b5e56b71b8d5491db8d33e8a9ce3df73);
+        
+
+        marker_c00867293a54462e856c473804d23b3b.bindPopup(popup_1fc87d6259934d14b806a48dcd56c2d8)
+        ;
+
+        
+    
+    
+            marker_c00867293a54462e856c473804d23b3b.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b1374994a894c6fbf43a30d8ea839f8 = L.marker(
+                [1.27109117295922, 103.81976836625],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_ccf652d50c344e93acab45082d0ab86b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6b1374994a894c6fbf43a30d8ea839f8.setIcon(icon_ccf652d50c344e93acab45082d0ab86b);
+        
+    
+        var popup_4c0a8457559e495d9ff9e0c171d32af9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a334f75f978c43f48ac7ce5e20e3cb7e = $(`<div id="html_a334f75f978c43f48ac7ce5e20e3cb7e" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COZcF_0FThZ/">Arbora Hilltop Dining at Mount Faber</a></div>`)[0];
+            popup_4c0a8457559e495d9ff9e0c171d32af9.setContent(html_a334f75f978c43f48ac7ce5e20e3cb7e);
+        
+
+        marker_6b1374994a894c6fbf43a30d8ea839f8.bindPopup(popup_4c0a8457559e495d9ff9e0c171d32af9)
+        ;
+
+        
+    
+    
+            marker_6b1374994a894c6fbf43a30d8ea839f8.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e6c6e59abc14c92b1a2c7b03e4d03c6 = L.marker(
+                [1.30399286856099, 103.831988903795],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_77a45056620343ce8061539f419b36f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1e6c6e59abc14c92b1a2c7b03e4d03c6.setIcon(icon_77a45056620343ce8061539f419b36f3);
+        
+    
+        var popup_aabb9b6a8eb343fbb30d06d1a3d48b77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b066ecd52c3406286c53fb815004ea7 = $(`<div id="html_1b066ecd52c3406286c53fb815004ea7" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COSk-vUliE4/">Sen-ryo Singapore</a></div>`)[0];
+            popup_aabb9b6a8eb343fbb30d06d1a3d48b77.setContent(html_1b066ecd52c3406286c53fb815004ea7);
+        
+
+        marker_1e6c6e59abc14c92b1a2c7b03e4d03c6.bindPopup(popup_aabb9b6a8eb343fbb30d06d1a3d48b77)
+        ;
+
+        
+    
+    
+            marker_1e6c6e59abc14c92b1a2c7b03e4d03c6.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b96cc2ca3f9b48e996d4e76f60d18852 = L.marker(
+                [1.32044103104797, 103.844192628979],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_df8a2f93123d496188ebfc50bf09ae7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b96cc2ca3f9b48e996d4e76f60d18852.setIcon(icon_df8a2f93123d496188ebfc50bf09ae7c);
+        
+    
+        var popup_9222e5fb9e694c5c99ae2115c50dd192 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_205827fbdd8f4455bcb321aa7466cf4f = $(`<div id="html_205827fbdd8f4455bcb321aa7466cf4f" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/COK3vw8FZo4/">Jollibee Novena Square 2</a></div>`)[0];
+            popup_9222e5fb9e694c5c99ae2115c50dd192.setContent(html_205827fbdd8f4455bcb321aa7466cf4f);
+        
+
+        marker_b96cc2ca3f9b48e996d4e76f60d18852.bindPopup(popup_9222e5fb9e694c5c99ae2115c50dd192)
+        ;
+
+        
+    
+    
+            marker_b96cc2ca3f9b48e996d4e76f60d18852.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e3b23e266674ef5a4010372605dd562 = L.marker(
+                [1.32044103104797, 103.844192628979],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_02c86c62177742b1bf8d822bf1a1a494 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e3b23e266674ef5a4010372605dd562.setIcon(icon_02c86c62177742b1bf8d822bf1a1a494);
+        
+    
+        var popup_660fb2954644493f8d4ec166a49d3ab4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c355308a74af420c8ee9f996bc2d06a7 = $(`<div id="html_c355308a74af420c8ee9f996bc2d06a7" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CN4xsygFJ4i/">Ji De Chi Dessert</a></div>`)[0];
+            popup_660fb2954644493f8d4ec166a49d3ab4.setContent(html_c355308a74af420c8ee9f996bc2d06a7);
+        
+
+        marker_6e3b23e266674ef5a4010372605dd562.bindPopup(popup_660fb2954644493f8d4ec166a49d3ab4)
+        ;
+
+        
+    
+    
+            marker_6e3b23e266674ef5a4010372605dd562.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf56bad9c66c46199729d5b50f5bb290 = L.marker(
+                [1.30823166858437, 103.850992046671],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_176767726ab14805b0abea5ff869f56c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf56bad9c66c46199729d5b50f5bb290.setIcon(icon_176767726ab14805b0abea5ff869f56c);
+        
+    
+        var popup_40c4a99322f8402fbbdc37b72ecc8cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30a2c8a5d22b424799d5af5f8584bcdc = $(`<div id="html_30a2c8a5d22b424799d5af5f8584bcdc" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CNy8jD_FU8q/">Three's A Crowd</a></div>`)[0];
+            popup_40c4a99322f8402fbbdc37b72ecc8cf9.setContent(html_30a2c8a5d22b424799d5af5f8584bcdc);
+        
+
+        marker_bf56bad9c66c46199729d5b50f5bb290.bindPopup(popup_40c4a99322f8402fbbdc37b72ecc8cf9)
+        ;
+
+        
+    
+    
+            marker_bf56bad9c66c46199729d5b50f5bb290.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1b07e21a3034a67ab9408b918ec5edb = L.marker(
+                [1.35525176294219, 103.988939665328],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_1cbaa53b1e574cb4907b2e50f0153217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d1b07e21a3034a67ab9408b918ec5edb.setIcon(icon_1cbaa53b1e574cb4907b2e50f0153217);
+        
+    
+        var popup_032d14ad80684264a3626e75a2050c14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b36ac92e65e4a2c85dd74d9c65e03b6 = $(`<div id="html_5b36ac92e65e4a2c85dd74d9c65e03b6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CNeiGy1lYqt/">Hub & Spoke Cafe</a></div>`)[0];
+            popup_032d14ad80684264a3626e75a2050c14.setContent(html_5b36ac92e65e4a2c85dd74d9c65e03b6);
+        
+
+        marker_d1b07e21a3034a67ab9408b918ec5edb.bindPopup(popup_032d14ad80684264a3626e75a2050c14)
+        ;
+
+        
+    
+    
+            marker_d1b07e21a3034a67ab9408b918ec5edb.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b45d7fe778b46a18c0c93eabb877bc6 = L.marker(
+                [1.28332249857386, 103.857629111139],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_9d6a437687cf4441bf3ea2f092f0d782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b45d7fe778b46a18c0c93eabb877bc6.setIcon(icon_9d6a437687cf4441bf3ea2f092f0d782);
+        
+    
+        var popup_6f550313890b45f1ab1209de47824e5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee5c7ecfbe684d648c22ff9c307dff36 = $(`<div id="html_ee5c7ecfbe684d648c22ff9c307dff36" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CNU5gOwFvZz/">Blossom Restaurant</a></div>`)[0];
+            popup_6f550313890b45f1ab1209de47824e5b.setContent(html_ee5c7ecfbe684d648c22ff9c307dff36);
+        
+
+        marker_9b45d7fe778b46a18c0c93eabb877bc6.bindPopup(popup_6f550313890b45f1ab1209de47824e5b)
+        ;
+
+        
+    
+    
+            marker_9b45d7fe778b46a18c0c93eabb877bc6.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3d808409bc54e0895018ff60de33c53 = L.marker(
+                [1.30369890706785, 103.833189592785],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_32cdf00f1bf14518b8b6ce8b8e0f8119 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3d808409bc54e0895018ff60de33c53.setIcon(icon_32cdf00f1bf14518b8b6ce8b8e0f8119);
+        
+    
+        var popup_3ddd50a53db149ed9036eb47bf347c96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf5299b99e084ce88d7594b05752ad7c = $(`<div id="html_cf5299b99e084ce88d7594b05752ad7c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CM6j9uhlCQP/">Wonderland Savour</a></div>`)[0];
+            popup_3ddd50a53db149ed9036eb47bf347c96.setContent(html_cf5299b99e084ce88d7594b05752ad7c);
+        
+
+        marker_f3d808409bc54e0895018ff60de33c53.bindPopup(popup_3ddd50a53db149ed9036eb47bf347c96)
+        ;
+
+        
+    
+    
+            marker_f3d808409bc54e0895018ff60de33c53.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed4281fc02974096983869063975fc0e = L.marker(
+                [1.31416383479813, 103.853905530109],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_589b64e951a743f79f59816292d82e78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed4281fc02974096983869063975fc0e.setIcon(icon_589b64e951a743f79f59816292d82e78);
+        
+    
+        var popup_41ec01109b8b483b8237ad2fc1d29eaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_041e63a24a2948879a7339e9cffb9eea = $(`<div id="html_041e63a24a2948879a7339e9cffb9eea" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CMmvcJDFiKH/">Egg Stop</a></div>`)[0];
+            popup_41ec01109b8b483b8237ad2fc1d29eaa.setContent(html_041e63a24a2948879a7339e9cffb9eea);
+        
+
+        marker_ed4281fc02974096983869063975fc0e.bindPopup(popup_41ec01109b8b483b8237ad2fc1d29eaa)
+        ;
+
+        
+    
+    
+            marker_ed4281fc02974096983869063975fc0e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1218dee12c3c480ebcbdea4660708718 = L.marker(
+                [1.30572373922754, 103.82810604464],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_f250c9fe4f7c482494c98a3a56e07d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1218dee12c3c480ebcbdea4660708718.setIcon(icon_f250c9fe4f7c482494c98a3a56e07d3c);
+        
+    
+        var popup_94d704409e2b4e71bcdd4391e3264dc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_781bb9f4c8ff43cb9b6539bd08bf5d3d = $(`<div id="html_781bb9f4c8ff43cb9b6539bd08bf5d3d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CMUfDdfFX_T/">Hard Rock Cafe Singapore</a></div>`)[0];
+            popup_94d704409e2b4e71bcdd4391e3264dc8.setContent(html_781bb9f4c8ff43cb9b6539bd08bf5d3d);
+        
+
+        marker_1218dee12c3c480ebcbdea4660708718.bindPopup(popup_94d704409e2b4e71bcdd4391e3264dc8)
+        ;
+
+        
+    
+    
+            marker_1218dee12c3c480ebcbdea4660708718.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4368387651e4d549cf86e5a3af145e9 = L.marker(
+                [1.31156153927788, 103.875895476507],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a59d4274f1534ab2b9b196a669a9911d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4368387651e4d549cf86e5a3af145e9.setIcon(icon_a59d4274f1534ab2b9b196a669a9911d);
+        
+    
+        var popup_14b0bebbeb8d4c7dbbe949c1953a86f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd1a0a061de9455a92612c979b43a314 = $(`<div id="html_bd1a0a061de9455a92612c979b43a314" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CL9Km3CFbjY/">BBQ Box</a></div>`)[0];
+            popup_14b0bebbeb8d4c7dbbe949c1953a86f1.setContent(html_bd1a0a061de9455a92612c979b43a314);
+        
+
+        marker_f4368387651e4d549cf86e5a3af145e9.bindPopup(popup_14b0bebbeb8d4c7dbbe949c1953a86f1)
+        ;
+
+        
+    
+    
+            marker_f4368387651e4d549cf86e5a3af145e9.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7323620a678f42418c995679fc109ee1 = L.marker(
+                [1.30149743415611, 103.836444791568],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_bf6ae5a94eca4e8abba38083608e7072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7323620a678f42418c995679fc109ee1.setIcon(icon_bf6ae5a94eca4e8abba38083608e7072);
+        
+    
+        var popup_e73453f8c6d44d7f9b448bdfbe94aa30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe97220a3aa647f99d3bec82147c6db5 = $(`<div id="html_fe97220a3aa647f99d3bec82147c6db5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CL1g2cTFNat/">Collin's Grille</a></div>`)[0];
+            popup_e73453f8c6d44d7f9b448bdfbe94aa30.setContent(html_fe97220a3aa647f99d3bec82147c6db5);
+        
+
+        marker_7323620a678f42418c995679fc109ee1.bindPopup(popup_e73453f8c6d44d7f9b448bdfbe94aa30)
+        ;
+
+        
+    
+    
+            marker_7323620a678f42418c995679fc109ee1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_faa2bc6aedad4f63b017a7098bc85fa7 = L.marker(
+                [1.30041423392971, 103.852292796726],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_46b3df750d4146739722ea169d72fe5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_faa2bc6aedad4f63b017a7098bc85fa7.setIcon(icon_46b3df750d4146739722ea169d72fe5f);
+        
+    
+        var popup_516396c783b346ceb0a89f9b26bedffb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1eea537fe1542d185888299dfc62333 = $(`<div id="html_f1eea537fe1542d185888299dfc62333" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CLdWqDrFJrK/">Atas Turkish Kebab</a></div>`)[0];
+            popup_516396c783b346ceb0a89f9b26bedffb.setContent(html_f1eea537fe1542d185888299dfc62333);
+        
+
+        marker_faa2bc6aedad4f63b017a7098bc85fa7.bindPopup(popup_516396c783b346ceb0a89f9b26bedffb)
+        ;
+
+        
+    
+    
+            marker_faa2bc6aedad4f63b017a7098bc85fa7.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5692b081bad4c2fbc1489bd532b3b65 = L.marker(
+                [1.29981639897451, 103.855923558787],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3341a568fbff4059bc437f6d368df509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d5692b081bad4c2fbc1489bd532b3b65.setIcon(icon_3341a568fbff4059bc437f6d368df509);
+        
+    
+        var popup_d688e09daa534e0794d6719b84f23c09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_121f17b94d694d35ae2328e803bd2c9a = $(`<div id="html_121f17b94d694d35ae2328e803bd2c9a" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CLRD8RBFDF4/">The Chewy Junior</a></div>`)[0];
+            popup_d688e09daa534e0794d6719b84f23c09.setContent(html_121f17b94d694d35ae2328e803bd2c9a);
+        
+
+        marker_d5692b081bad4c2fbc1489bd532b3b65.bindPopup(popup_d688e09daa534e0794d6719b84f23c09)
+        ;
+
+        
+    
+    
+            marker_d5692b081bad4c2fbc1489bd532b3b65.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0410335d08a4da88fbfa2e72944d8cc = L.marker(
+                [1.32161991390197, 103.848863762617],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_c7164e641475421c8a67187e7eef643e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c0410335d08a4da88fbfa2e72944d8cc.setIcon(icon_c7164e641475421c8a67187e7eef643e);
+        
+    
+        var popup_ba138bbac3ce481f987d000e2a6755a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c9811d675964599aebbb8a236e68048 = $(`<div id="html_2c9811d675964599aebbb8a236e68048" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CK8U2fhlpey/">Supply & Demand Novena</a></div>`)[0];
+            popup_ba138bbac3ce481f987d000e2a6755a3.setContent(html_2c9811d675964599aebbb8a236e68048);
+        
+
+        marker_c0410335d08a4da88fbfa2e72944d8cc.bindPopup(popup_ba138bbac3ce481f987d000e2a6755a3)
+        ;
+
+        
+    
+    
+            marker_c0410335d08a4da88fbfa2e72944d8cc.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9ae8a989baa417a9218a933b907f0df = L.marker(
+                [1.29065533840368, 103.851708013559],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_396a0ef34dbc4656a8bcf867478066ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d9ae8a989baa417a9218a933b907f0df.setIcon(icon_396a0ef34dbc4656a8bcf867478066ec);
+        
+    
+        var popup_542f0cde6ef740c6a145aedd97c01765 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b6a40ceb9934a52bfc53a45d70ef4b8 = $(`<div id="html_4b6a40ceb9934a52bfc53a45d70ef4b8" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CKsURW2F3R3/">Yan at National Gallery Museum Singapore</a></div>`)[0];
+            popup_542f0cde6ef740c6a145aedd97c01765.setContent(html_4b6a40ceb9934a52bfc53a45d70ef4b8);
+        
+
+        marker_d9ae8a989baa417a9218a933b907f0df.bindPopup(popup_542f0cde6ef740c6a145aedd97c01765)
+        ;
+
+        
+    
+    
+            marker_d9ae8a989baa417a9218a933b907f0df.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa06bc23606b4974ba6bea948d951813 = L.marker(
+                [1.32988651708771, 103.854213740191],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a410de7a53b8429b9414fcd30b709847 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa06bc23606b4974ba6bea948d951813.setIcon(icon_a410de7a53b8429b9414fcd30b709847);
+        
+    
+        var popup_f04a47ada44e463099a63175a77a7699 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07c4239d0298447a86233f6ae63560e5 = $(`<div id="html_07c4239d0298447a86233f6ae63560e5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CKKy0s5F-w4/">Axsolute Bistro</a></div>`)[0];
+            popup_f04a47ada44e463099a63175a77a7699.setContent(html_07c4239d0298447a86233f6ae63560e5);
+        
+
+        marker_aa06bc23606b4974ba6bea948d951813.bindPopup(popup_f04a47ada44e463099a63175a77a7699)
+        ;
+
+        
+    
+    
+            marker_aa06bc23606b4974ba6bea948d951813.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c98d825cf89643b488b7e8da28244cee = L.marker(
+                [1.30041423392971, 103.852292796726],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_12bb5f062f8e4df6adfd995c556a8afd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c98d825cf89643b488b7e8da28244cee.setIcon(icon_12bb5f062f8e4df6adfd995c556a8afd);
+        
+    
+        var popup_2285ae32c8584fa495b5155fc3a6873f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f07eff10335346b4b486bc17c8957422 = $(`<div id="html_f07eff10335346b4b486bc17c8957422" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CKF-iM2lG0y/">Hong Kong Dim Sum Shop</a></div>`)[0];
+            popup_2285ae32c8584fa495b5155fc3a6873f.setContent(html_f07eff10335346b4b486bc17c8957422);
+        
+
+        marker_c98d825cf89643b488b7e8da28244cee.bindPopup(popup_2285ae32c8584fa495b5155fc3a6873f)
+        ;
+
+        
+    
+    
+            marker_c98d825cf89643b488b7e8da28244cee.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb9ec605b5404d25bd1316ab08c8eed4 = L.marker(
+                [1.28332249857386, 103.857629111139],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_974067ec1a8c427aa4ddd968a4cb245b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb9ec605b5404d25bd1316ab08c8eed4.setIcon(icon_974067ec1a8c427aa4ddd968a4cb245b);
+        
+    
+        var popup_f3e9ba1c50314c0785765e84421f3775 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e466398382c44f7f87f8d53d20c3b161 = $(`<div id="html_e466398382c44f7f87f8d53d20c3b161" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CJnCp-HlJZG/">The Coffee Beanstro @ Marina Bay Sands</a></div>`)[0];
+            popup_f3e9ba1c50314c0785765e84421f3775.setContent(html_e466398382c44f7f87f8d53d20c3b161);
+        
+
+        marker_eb9ec605b5404d25bd1316ab08c8eed4.bindPopup(popup_f3e9ba1c50314c0785765e84421f3775)
+        ;
+
+        
+    
+    
+            marker_eb9ec605b5404d25bd1316ab08c8eed4.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32e2b06190c14c439eb85b8253b87479 = L.marker(
+                [1.27870608494088, 103.848418970551],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_5b8fb691f212420e9e6484ec8d8d08a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_32e2b06190c14c439eb85b8253b87479.setIcon(icon_5b8fb691f212420e9e6484ec8d8d08a6);
+        
+    
+        var popup_6e724ccc788046a8b16f2a32a987e3bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68ca2c8c5de54e08a849cd169308abd1 = $(`<div id="html_68ca2c8c5de54e08a849cd169308abd1" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CJfWVfNFEIX/">MYO restobar</a></div>`)[0];
+            popup_6e724ccc788046a8b16f2a32a987e3bf.setContent(html_68ca2c8c5de54e08a849cd169308abd1);
+        
+
+        marker_32e2b06190c14c439eb85b8253b87479.bindPopup(popup_6e724ccc788046a8b16f2a32a987e3bf)
+        ;
+
+        
+    
+    
+            marker_32e2b06190c14c439eb85b8253b87479.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cfc4f7c17254d7995e07fd2f55fca60 = L.marker(
+                [1.32694504484324, 103.846554377679],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_707a84f990e74a4cb58166b4e4a05091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4cfc4f7c17254d7995e07fd2f55fca60.setIcon(icon_707a84f990e74a4cb58166b4e4a05091);
+        
+    
+        var popup_370f67fd3a5747f8a74e2f83ea0115db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30414f9ba37e470a87ae23894cd0946c = $(`<div id="html_30414f9ba37e470a87ae23894cd0946c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CJKRs-HFaBg/">Ramada by Wyndham Singapore at Zhongshan Park</a></div>`)[0];
+            popup_370f67fd3a5747f8a74e2f83ea0115db.setContent(html_30414f9ba37e470a87ae23894cd0946c);
+        
+
+        marker_4cfc4f7c17254d7995e07fd2f55fca60.bindPopup(popup_370f67fd3a5747f8a74e2f83ea0115db)
+        ;
+
+        
+    
+    
+            marker_4cfc4f7c17254d7995e07fd2f55fca60.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fda48c86c6ab4250a460c5555cc2c84c = L.marker(
+                [1.30242417189411, 103.834676124723],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_38f6a258d2834981904477baf0e38865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fda48c86c6ab4250a460c5555cc2c84c.setIcon(icon_38f6a258d2834981904477baf0e38865);
+        
+    
+        var popup_ab65aa69e7f841a298a1ce4487006acc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d307d54c5754ee99941c31664f61210 = $(`<div id="html_9d307d54c5754ee99941c31664f61210" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CIud1oTlfwd/">Flipperâ€™s Singapore</a></div>`)[0];
+            popup_ab65aa69e7f841a298a1ce4487006acc.setContent(html_9d307d54c5754ee99941c31664f61210);
+        
+
+        marker_fda48c86c6ab4250a460c5555cc2c84c.bindPopup(popup_ab65aa69e7f841a298a1ce4487006acc)
+        ;
+
+        
+    
+    
+            marker_fda48c86c6ab4250a460c5555cc2c84c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d38a234ec196470abbce4fc2beb868a9 = L.marker(
+                [1.35556855805419, 103.985852088983],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_508d82f51f614f979bf8401acfcab5bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d38a234ec196470abbce4fc2beb868a9.setIcon(icon_508d82f51f614f979bf8401acfcab5bb);
+        
+    
+        var popup_e8bb699c69a0416494bd82032a806f7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_390fda11b36c45a484d73b68420d0af1 = $(`<div id="html_390fda11b36c45a484d73b68420d0af1" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CIc2qGBFKZH/">Paradise Dynasty at Changi Airport Terminal</a></div>`)[0];
+            popup_e8bb699c69a0416494bd82032a806f7d.setContent(html_390fda11b36c45a484d73b68420d0af1);
+        
+
+        marker_d38a234ec196470abbce4fc2beb868a9.bindPopup(popup_e8bb699c69a0416494bd82032a806f7d)
+        ;
+
+        
+    
+    
+            marker_d38a234ec196470abbce4fc2beb868a9.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81db6a5a85684e3190561b9b2a7e940d = L.marker(
+                [1.30206450556085, 103.836340953476],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3778b030c1454eb59af03603b375faeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_81db6a5a85684e3190561b9b2a7e940d.setIcon(icon_3778b030c1454eb59af03603b375faeb);
+        
+    
+        var popup_d2d03244ba0a4ff5939b33109729f239 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9a6973dfb8046a9b9466856d49c8803 = $(`<div id="html_c9a6973dfb8046a9b9466856d49c8803" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CH7DA0tFOGl/">Arteastiq</a></div>`)[0];
+            popup_d2d03244ba0a4ff5939b33109729f239.setContent(html_c9a6973dfb8046a9b9466856d49c8803);
+        
+
+        marker_81db6a5a85684e3190561b9b2a7e940d.bindPopup(popup_d2d03244ba0a4ff5939b33109729f239)
+        ;
+
+        
+    
+    
+            marker_81db6a5a85684e3190561b9b2a7e940d.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fb80ee6ece44f7f848a9b7be88c6f4e = L.marker(
+                [1.35948337264387, 103.833963930413],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_0b6620a6e66c4d99840ccdac819c06a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5fb80ee6ece44f7f848a9b7be88c6f4e.setIcon(icon_0b6620a6e66c4d99840ccdac819c06a4);
+        
+    
+        var popup_aeca5f95ba2b45ff93a8d636af5dbdd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61baec594fdd4d09a95ddecf14688615 = $(`<div id="html_61baec594fdd4d09a95ddecf14688615" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CH1p1jIl1TP/">So Good Char Chan Tang</a></div>`)[0];
+            popup_aeca5f95ba2b45ff93a8d636af5dbdd0.setContent(html_61baec594fdd4d09a95ddecf14688615);
+        
+
+        marker_5fb80ee6ece44f7f848a9b7be88c6f4e.bindPopup(popup_aeca5f95ba2b45ff93a8d636af5dbdd0)
+        ;
+
+        
+    
+    
+            marker_5fb80ee6ece44f7f848a9b7be88c6f4e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_329bbe7b7f594616afa041256290282e = L.marker(
+                [1.32328917067445, 103.855735557842],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_02f845ef0aab4ae7b58690171913a52c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_329bbe7b7f594616afa041256290282e.setIcon(icon_02f845ef0aab4ae7b58690171913a52c);
+        
+    
+        var popup_aeb755f7e4d4457dbb6ed5b73286a92b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70c82ac54d93427bac4ef4dfd630d425 = $(`<div id="html_70c82ac54d93427bac4ef4dfd630d425" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CG_fFwJlPSi/">Doughnut Shack SG</a></div>`)[0];
+            popup_aeb755f7e4d4457dbb6ed5b73286a92b.setContent(html_70c82ac54d93427bac4ef4dfd630d425);
+        
+
+        marker_329bbe7b7f594616afa041256290282e.bindPopup(popup_aeb755f7e4d4457dbb6ed5b73286a92b)
+        ;
+
+        
+    
+    
+            marker_329bbe7b7f594616afa041256290282e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f5cb8ccc7a448339008b5e49a2fb20a = L.marker(
+                [1.35327556197146, 103.834836368264],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_27db6a9282014bc59e634f6e162c31c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f5cb8ccc7a448339008b5e49a2fb20a.setIcon(icon_27db6a9282014bc59e634f6e162c31c3);
+        
+    
+        var popup_6993fc4fff9f4670a95fda76503a017f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dec0cca9dbf464f868e06558d466403 = $(`<div id="html_8dec0cca9dbf464f868e06558d466403" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CG6qGnOFPVt/">Soi19 Upper Thomson</a></div>`)[0];
+            popup_6993fc4fff9f4670a95fda76503a017f.setContent(html_8dec0cca9dbf464f868e06558d466403);
+        
+
+        marker_8f5cb8ccc7a448339008b5e49a2fb20a.bindPopup(popup_6993fc4fff9f4670a95fda76503a017f)
+        ;
+
+        
+    
+    
+            marker_8f5cb8ccc7a448339008b5e49a2fb20a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d08a48c38654d828cea8a85cc7c1087 = L.marker(
+                [1.31756115921, 103.892836694432],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_f7e1f890de3f4708b4284a16389ac80a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d08a48c38654d828cea8a85cc7c1087.setIcon(icon_f7e1f890de3f4708b4284a16389ac80a);
+        
+    
+        var popup_cb306ee3682847839b02aed372b4e12b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85742c61dc154e5ba49edb4e90afed61 = $(`<div id="html_85742c61dc154e5ba49edb4e90afed61" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CGhOjXml2yD/">Hot Tomato Cafe & Grill</a></div>`)[0];
+            popup_cb306ee3682847839b02aed372b4e12b.setContent(html_85742c61dc154e5ba49edb4e90afed61);
+        
+
+        marker_5d08a48c38654d828cea8a85cc7c1087.bindPopup(popup_cb306ee3682847839b02aed372b4e12b)
+        ;
+
+        
+    
+    
+            marker_5d08a48c38654d828cea8a85cc7c1087.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_790c78c457134fb598353b4ff05c819a = L.marker(
+                [1.29881671350692, 103.839470015966],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_6242f20eed6f4e79a89f1c71c79d03d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_790c78c457134fb598353b4ff05c819a.setIcon(icon_6242f20eed6f4e79a89f1c71c79d03d8);
+        
+    
+        var popup_32f797bb8c3f424193afe390d6a4ce6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc2e10e6de8a47fe8c2423046b780ed4 = $(`<div id="html_dc2e10e6de8a47fe8c2423046b780ed4" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CGb-oITF45b/">Killiney Kopitiam</a></div>`)[0];
+            popup_32f797bb8c3f424193afe390d6a4ce6b.setContent(html_dc2e10e6de8a47fe8c2423046b780ed4);
+        
+
+        marker_790c78c457134fb598353b4ff05c819a.bindPopup(popup_32f797bb8c3f424193afe390d6a4ce6b)
+        ;
+
+        
+    
+    
+            marker_790c78c457134fb598353b4ff05c819a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab04343693b14ce290ae63ac54e7123c = L.marker(
+                [1.31157721938196, 103.859941095391],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_102c9a9a39fa470485e44a3ecb9b0fa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab04343693b14ce290ae63ac54e7123c.setIcon(icon_102c9a9a39fa470485e44a3ecb9b0fa6);
+        
+    
+        var popup_f92a29feaa5f4021888e6a43565f7e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_875dc2fb202b4d12bd311a4e6702f3b6 = $(`<div id="html_875dc2fb202b4d12bd311a4e6702f3b6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CF7cWX5F72S/">Creamery Boutique Ice Creams Singapore</a></div>`)[0];
+            popup_f92a29feaa5f4021888e6a43565f7e16.setContent(html_875dc2fb202b4d12bd311a4e6702f3b6);
+        
+
+        marker_ab04343693b14ce290ae63ac54e7123c.bindPopup(popup_f92a29feaa5f4021888e6a43565f7e16)
+        ;
+
+        
+    
+    
+            marker_ab04343693b14ce290ae63ac54e7123c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbd6f463bcb44e7486e9cd9c0b31bad3 = L.marker(
+                [1.26430476483158, 103.822308649643],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_be9fd86049f24fcb91ab53049f52b29f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dbd6f463bcb44e7486e9cd9c0b31bad3.setIcon(icon_be9fd86049f24fcb91ab53049f52b29f);
+        
+    
+        var popup_7cb76cef7e7c4469ad30b3510a8bab63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da83b3a7523c4a508f8813541ee5f9f5 = $(`<div id="html_da83b3a7523c4a508f8813541ee5f9f5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CFi1zQrFsEK/">MarchÃ© MÃ¶venpick Singapore</a></div>`)[0];
+            popup_7cb76cef7e7c4469ad30b3510a8bab63.setContent(html_da83b3a7523c4a508f8813541ee5f9f5);
+        
+
+        marker_dbd6f463bcb44e7486e9cd9c0b31bad3.bindPopup(popup_7cb76cef7e7c4469ad30b3510a8bab63)
+        ;
+
+        
+    
+    
+            marker_dbd6f463bcb44e7486e9cd9c0b31bad3.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b34087a9d96403485c87166f502f6f7 = L.marker(
+                [1.3042977039481, 103.854106342279],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_8357f61e94544722a7fc1c488887059c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6b34087a9d96403485c87166f502f6f7.setIcon(icon_8357f61e94544722a7fc1c488887059c);
+        
+    
+        var popup_27629e0a516d402b88e20347d701d84e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0d48aebe6e74ad5ba2cae77bea193b3 = $(`<div id="html_a0d48aebe6e74ad5ba2cae77bea193b3" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEqdohBFNvm/">Korean Fusion BBQ</a></div>`)[0];
+            popup_27629e0a516d402b88e20347d701d84e.setContent(html_a0d48aebe6e74ad5ba2cae77bea193b3);
+        
+
+        marker_6b34087a9d96403485c87166f502f6f7.bindPopup(popup_27629e0a516d402b88e20347d701d84e)
+        ;
+
+        
+    
+    
+            marker_6b34087a9d96403485c87166f502f6f7.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e8635a9a945493798d86a4f7683f1fe = L.marker(
+                [1.29145526802576, 103.857007335679],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3bb9e8d2262742dbafa790c54cca3e0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0e8635a9a945493798d86a4f7683f1fe.setIcon(icon_3bb9e8d2262742dbafa790c54cca3e0b);
+        
+    
+        var popup_381c4645df4a46d98bd069efd539c965 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4014b77795424c53b2c1043d3fc50104 = $(`<div id="html_4014b77795424c53b2c1043d3fc50104" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEdz4r3FRbw/">Bao Today</a></div>`)[0];
+            popup_381c4645df4a46d98bd069efd539c965.setContent(html_4014b77795424c53b2c1043d3fc50104);
+        
+
+        marker_0e8635a9a945493798d86a4f7683f1fe.bindPopup(popup_381c4645df4a46d98bd069efd539c965)
+        ;
+
+        
+    
+    
+            marker_0e8635a9a945493798d86a4f7683f1fe.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21febc9d6ae2476b826ad335cbd690fc = L.marker(
+                [1.30878949399241, 103.792695569227],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_b18920c8be8943e4b0eb8b6913e1b972 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21febc9d6ae2476b826ad335cbd690fc.setIcon(icon_b18920c8be8943e4b0eb8b6913e1b972);
+        
+    
+        var popup_3a9cc2f4727e493daff88e533e33e51b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e38ccf2e79a4e0f94655b2abafdbc1d = $(`<div id="html_0e38ccf2e79a4e0f94655b2abafdbc1d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEUDd5pFsuK/">Supreme Xiao Long Bao</a></div>`)[0];
+            popup_3a9cc2f4727e493daff88e533e33e51b.setContent(html_0e38ccf2e79a4e0f94655b2abafdbc1d);
+        
+
+        marker_21febc9d6ae2476b826ad335cbd690fc.bindPopup(popup_3a9cc2f4727e493daff88e533e33e51b)
+        ;
+
+        
+    
+    
+            marker_21febc9d6ae2476b826ad335cbd690fc.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa900e1e44f645fe94662c728402c9b4 = L.marker(
+                [1.29629320863563, 103.854675582955],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3c040445e451420496ac515be7420e8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa900e1e44f645fe94662c728402c9b4.setIcon(icon_3c040445e451420496ac515be7420e8b);
+        
+    
+        var popup_4744ba2976864aa99e16c6624fb6cb9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cca9c8f4f23442fab0d3a4edd537aa7 = $(`<div id="html_0cca9c8f4f23442fab0d3a4edd537aa7" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CEN64K1FZ3z/">Entre-nous creperie</a></div>`)[0];
+            popup_4744ba2976864aa99e16c6624fb6cb9b.setContent(html_0cca9c8f4f23442fab0d3a4edd537aa7);
+        
+
+        marker_aa900e1e44f645fe94662c728402c9b4.bindPopup(popup_4744ba2976864aa99e16c6624fb6cb9b)
+        ;
+
+        
+    
+    
+            marker_aa900e1e44f645fe94662c728402c9b4.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_945e1e01a3c742d695cc230e37796384 = L.marker(
+                [1.28905634657056, 103.827502108439],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_ad378ce11dc946789fb732f61b6ebc6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_945e1e01a3c742d695cc230e37796384.setIcon(icon_ad378ce11dc946789fb732f61b6ebc6a);
+        
+    
+        var popup_8397878119834ebca70f667084403530 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b33458b719d94beeb8163caa2ce0c545 = $(`<div id="html_b33458b719d94beeb8163caa2ce0c545" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CDvW3SrFXWd/">Happy Oven Singapore</a></div>`)[0];
+            popup_8397878119834ebca70f667084403530.setContent(html_b33458b719d94beeb8163caa2ce0c545);
+        
+
+        marker_945e1e01a3c742d695cc230e37796384.bindPopup(popup_8397878119834ebca70f667084403530)
+        ;
+
+        
+    
+    
+            marker_945e1e01a3c742d695cc230e37796384.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bd3f7e46a50427f8db639d8e9992f74 = L.marker(
+                [1.30513510179213, 103.904307160288],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_7a216a1807474023ac2a8fc40ac4c1fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6bd3f7e46a50427f8db639d8e9992f74.setIcon(icon_7a216a1807474023ac2a8fc40ac4c1fc);
+        
+    
+        var popup_c0655de1e1a24f21b3562abf1b6c078f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8875a19e78b14e11b1b33077abad9a52 = $(`<div id="html_8875a19e78b14e11b1b33077abad9a52" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CDq8gvFHYWx/">Baba Chews Bar & Eatery</a></div>`)[0];
+            popup_c0655de1e1a24f21b3562abf1b6c078f.setContent(html_8875a19e78b14e11b1b33077abad9a52);
+        
+
+        marker_6bd3f7e46a50427f8db639d8e9992f74.bindPopup(popup_c0655de1e1a24f21b3562abf1b6c078f)
+        ;
+
+        
+    
+    
+            marker_6bd3f7e46a50427f8db639d8e9992f74.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7bbb1593a69478ebfdde84eb61a7e65 = L.marker(
+                [1.31139349427341, 103.856487111691],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_bb5ef073e8324fa0add1e327648506a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7bbb1593a69478ebfdde84eb61a7e65.setIcon(icon_bb5ef073e8324fa0add1e327648506a7);
+        
+    
+        var popup_4a2e9c4622f74c81809ac45910b7744c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef526b7c2d844759b8637382a7a442b = $(`<div id="html_eef526b7c2d844759b8637382a7a442b" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CDIt0ywl8x9/">Genki Sushi City Square</a></div>`)[0];
+            popup_4a2e9c4622f74c81809ac45910b7744c.setContent(html_eef526b7c2d844759b8637382a7a442b);
+        
+
+        marker_d7bbb1593a69478ebfdde84eb61a7e65.bindPopup(popup_4a2e9c4622f74c81809ac45910b7744c)
+        ;
+
+        
+    
+    
+            marker_d7bbb1593a69478ebfdde84eb61a7e65.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_231889096852458593cd13f26c2e2aa7 = L.marker(
+                [1.35502885653149, 103.831053292454],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_30aec05ebe944d658d492aa0ab6ca5df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_231889096852458593cd13f26c2e2aa7.setIcon(icon_30aec05ebe944d658d492aa0ab6ca5df);
+        
+    
+        var popup_9d2a092cf4b242dea08736e2e4ac7cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1a75ed2df034c1a8e092edf69a49c43 = $(`<div id="html_c1a75ed2df034c1a8e092edf69a49c43" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CDBxX_pFNY4/">Twelve Cupcakes</a></div>`)[0];
+            popup_9d2a092cf4b242dea08736e2e4ac7cb0.setContent(html_c1a75ed2df034c1a8e092edf69a49c43);
+        
+
+        marker_231889096852458593cd13f26c2e2aa7.bindPopup(popup_9d2a092cf4b242dea08736e2e4ac7cb0)
+        ;
+
+        
+    
+    
+            marker_231889096852458593cd13f26c2e2aa7.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d0542e70d5049d39862ca2f94a6af5a = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_ac469e886c19491e8f1ce0854091edcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2d0542e70d5049d39862ca2f94a6af5a.setIcon(icon_ac469e886c19491e8f1ce0854091edcc);
+        
+    
+        var popup_6e9e6f135b254490872be54391cd59a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94aa75ae91c04b3e84b1f2bb6dfe352c = $(`<div id="html_94aa75ae91c04b3e84b1f2bb6dfe352c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CC2bBmnli-M/">Ayam Penyet President at Kallangwave</a></div>`)[0];
+            popup_6e9e6f135b254490872be54391cd59a1.setContent(html_94aa75ae91c04b3e84b1f2bb6dfe352c);
+        
+
+        marker_2d0542e70d5049d39862ca2f94a6af5a.bindPopup(popup_6e9e6f135b254490872be54391cd59a1)
+        ;
+
+        
+    
+    
+            marker_2d0542e70d5049d39862ca2f94a6af5a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_721dc512a9de4bc097bb50de931dbda7 = L.marker(
+                [1.30307157630397, 103.873044700613],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a6875adca6a34439b9df29fefc09718c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_721dc512a9de4bc097bb50de931dbda7.setIcon(icon_a6875adca6a34439b9df29fefc09718c);
+        
+    
+        var popup_779673f2db734aeaaa8653932882440b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cb8dca323c04d44851f4fc22bf53ff8 = $(`<div id="html_3cb8dca323c04d44851f4fc22bf53ff8" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CCcez2CF5v8/">Suki-Ya</a></div>`)[0];
+            popup_779673f2db734aeaaa8653932882440b.setContent(html_3cb8dca323c04d44851f4fc22bf53ff8);
+        
+
+        marker_721dc512a9de4bc097bb50de931dbda7.bindPopup(popup_779673f2db734aeaaa8653932882440b)
+        ;
+
+        
+    
+    
+            marker_721dc512a9de4bc097bb50de931dbda7.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f58c11ded1ca436196188616a9ebe4e6 = L.marker(
+                [1.28402150049556, 103.864915787491],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3e7b4d4763fd429a957ca5878568bb01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f58c11ded1ca436196188616a9ebe4e6.setIcon(icon_3e7b4d4763fd429a957ca5878568bb01);
+        
+    
+        var popup_4e6e4ad0e37c44d4b3558e7b3a2fe7b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6814255ff22a4958a96a389a271119a2 = $(`<div id="html_6814255ff22a4958a96a389a271119a2" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CBuf0G-lXA4/">Satay By the Bay</a></div>`)[0];
+            popup_4e6e4ad0e37c44d4b3558e7b3a2fe7b2.setContent(html_6814255ff22a4958a96a389a271119a2);
+        
+
+        marker_f58c11ded1ca436196188616a9ebe4e6.bindPopup(popup_4e6e4ad0e37c44d4b3558e7b3a2fe7b2)
+        ;
+
+        
+    
+    
+            marker_f58c11ded1ca436196188616a9ebe4e6.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a3293a99f75474eb8adfb698302cfa1 = L.marker(
+                [1.33297562373531, 103.847965420815],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_2fe5da9064b84b2d88bdb1e1ed745533 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3a3293a99f75474eb8adfb698302cfa1.setIcon(icon_2fe5da9064b84b2d88bdb1e1ed745533);
+        
+    
+        var popup_791622ac04eb4cfdb8d7f03a3851ff68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23823890506141129bbe194ea105fa87 = $(`<div id="html_23823890506141129bbe194ea105fa87" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CBnHANynIjv/">Hong Fan Tian Mala Hotpot</a></div>`)[0];
+            popup_791622ac04eb4cfdb8d7f03a3851ff68.setContent(html_23823890506141129bbe194ea105fa87);
+        
+
+        marker_3a3293a99f75474eb8adfb698302cfa1.bindPopup(popup_791622ac04eb4cfdb8d7f03a3851ff68)
+        ;
+
+        
+    
+    
+            marker_3a3293a99f75474eb8adfb698302cfa1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4662398a467d47269e87eae964b18a35 = L.marker(
+                [1.32057156550961, 103.843219261065],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_e439d5d0e44b42ecb67529f19ebaeb0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4662398a467d47269e87eae964b18a35.setIcon(icon_e439d5d0e44b42ecb67529f19ebaeb0f);
+        
+    
+        var popup_5512aae347a340918da3906442d5669c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dc20bdce84146a28ea27e9b836dd334 = $(`<div id="html_6dc20bdce84146a28ea27e9b836dd334" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CBUgZdeFK4I/">Two Men Bagel House</a></div>`)[0];
+            popup_5512aae347a340918da3906442d5669c.setContent(html_6dc20bdce84146a28ea27e9b836dd334);
+        
+
+        marker_4662398a467d47269e87eae964b18a35.bindPopup(popup_5512aae347a340918da3906442d5669c)
+        ;
+
+        
+    
+    
+            marker_4662398a467d47269e87eae964b18a35.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42099f0a14f149358b2a94beed9d2dc0 = L.marker(
+                [1.31139349427341, 103.856487111691],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_d5db89d14469424fb1161ba90ea36cea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_42099f0a14f149358b2a94beed9d2dc0.setIcon(icon_d5db89d14469424fb1161ba90ea36cea);
+        
+    
+        var popup_fbd9d82c0b0445efb0ad91bd026c1f00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae06313fd4c74a22b0abdfe2f96992d0 = $(`<div id="html_ae06313fd4c74a22b0abdfe2f96992d0" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CAnHui3Fr-A/">Crave; the Original Adam Road Nasi Lemak</a></div>`)[0];
+            popup_fbd9d82c0b0445efb0ad91bd026c1f00.setContent(html_ae06313fd4c74a22b0abdfe2f96992d0);
+        
+
+        marker_42099f0a14f149358b2a94beed9d2dc0.bindPopup(popup_fbd9d82c0b0445efb0ad91bd026c1f00)
+        ;
+
+        
+    
+    
+            marker_42099f0a14f149358b2a94beed9d2dc0.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c20470446021464c9ee5990068ee849f = L.marker(
+                [1.30100656917241, 103.838246592796],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_19f10d59d3ef48589d826a044ad4f30d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c20470446021464c9ee5990068ee849f.setIcon(icon_19f10d59d3ef48589d826a044ad4f30d);
+        
+    
+        var popup_c0548a8216084fb7963aaa3ff95d4984 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfca900da13b425b9889610947177678 = $(`<div id="html_dfca900da13b425b9889610947177678" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CAh_tYyFLMx/">Sushi Express</a></div>`)[0];
+            popup_c0548a8216084fb7963aaa3ff95d4984.setContent(html_dfca900da13b425b9889610947177678);
+        
+
+        marker_c20470446021464c9ee5990068ee849f.bindPopup(popup_c0548a8216084fb7963aaa3ff95d4984)
+        ;
+
+        
+    
+    
+            marker_c20470446021464c9ee5990068ee849f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e677a747f02419aa97db7d8ddd7cf55 = L.marker(
+                [1.31996748439185, 103.843850630993],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_906947970d7c41d6970c712353c9e7f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e677a747f02419aa97db7d8ddd7cf55.setIcon(icon_906947970d7c41d6970c712353c9e7f7);
+        
+    
+        var popup_19f67d88fd7248dab15b04229d99e198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ca31caff22441349907dae1355ff686 = $(`<div id="html_8ca31caff22441349907dae1355ff686" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/CAAlXdLlbwF/">Tamago-EN</a></div>`)[0];
+            popup_19f67d88fd7248dab15b04229d99e198.setContent(html_8ca31caff22441349907dae1355ff686);
+        
+
+        marker_5e677a747f02419aa97db7d8ddd7cf55.bindPopup(popup_19f67d88fd7248dab15b04229d99e198)
+        ;
+
+        
+    
+    
+            marker_5e677a747f02419aa97db7d8ddd7cf55.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b92a5c40f1ae490ca337fe42db2107f3 = L.marker(
+                [1.35502885653149, 103.831053292454],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_fae72dd866084cc2baa462f2d8496dcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b92a5c40f1ae490ca337fe42db2107f3.setIcon(icon_fae72dd866084cc2baa462f2d8496dcf);
+        
+    
+        var popup_66d1daf6599c4f4aa538e9601b003eb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ac42494d43440d280787a2c88d5299c = $(`<div id="html_1ac42494d43440d280787a2c88d5299c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B_btqkUlMqe/">Peach Garden Group</a></div>`)[0];
+            popup_66d1daf6599c4f4aa538e9601b003eb2.setContent(html_1ac42494d43440d280787a2c88d5299c);
+        
+
+        marker_b92a5c40f1ae490ca337fe42db2107f3.bindPopup(popup_66d1daf6599c4f4aa538e9601b003eb2)
+        ;
+
+        
+    
+    
+            marker_b92a5c40f1ae490ca337fe42db2107f3.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87a7b603ace740dfa4b0ba227df0ba42 = L.marker(
+                [1.3331304765624, 103.847464972969],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a9cf924df225474ca9a738cea09e7e1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87a7b603ace740dfa4b0ba227df0ba42.setIcon(icon_a9cf924df225474ca9a738cea09e7e1f);
+        
+    
+        var popup_9bae87dff7684d56863bab07d48c0b88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf1bfbbb73d2455a87a7ed6ee1a3a759 = $(`<div id="html_cf1bfbbb73d2455a87a7ed6ee1a3a759" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B_HEHNWF3ym/">Nine Fresh</a></div>`)[0];
+            popup_9bae87dff7684d56863bab07d48c0b88.setContent(html_cf1bfbbb73d2455a87a7ed6ee1a3a759);
+        
+
+        marker_87a7b603ace740dfa4b0ba227df0ba42.bindPopup(popup_9bae87dff7684d56863bab07d48c0b88)
+        ;
+
+        
+    
+    
+            marker_87a7b603ace740dfa4b0ba227df0ba42.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74055fca31be4e9dbfe86352469fe6dd = L.marker(
+                [1.30458618029941, 103.860840750826],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_65aff99036c84168866a83f655bcf386 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_74055fca31be4e9dbfe86352469fe6dd.setIcon(icon_65aff99036c84168866a83f655bcf386);
+        
+    
+        var popup_a4839fd10101476eac3ca7a8bcc78981 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d75d1d2cd16f492e8fc3116705517a91 = $(`<div id="html_d75d1d2cd16f492e8fc3116705517a91" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B-ljLi8FcRg/">Eat 3 Bowls</a></div>`)[0];
+            popup_a4839fd10101476eac3ca7a8bcc78981.setContent(html_d75d1d2cd16f492e8fc3116705517a91);
+        
+
+        marker_74055fca31be4e9dbfe86352469fe6dd.bindPopup(popup_a4839fd10101476eac3ca7a8bcc78981)
+        ;
+
+        
+    
+    
+            marker_74055fca31be4e9dbfe86352469fe6dd.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02e328a05a1742a4acd0a6e292420752 = L.marker(
+                [1.31084761155667, 103.85863410298],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_b1e51cf544744647af1eb4d9a03d1f8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02e328a05a1742a4acd0a6e292420752.setIcon(icon_b1e51cf544744647af1eb4d9a03d1f8c);
+        
+    
+        var popup_42ffec0b5b764bc7a44c0ae14e7d672c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b256ac239a8041f49715aa823b35d3c6 = $(`<div id="html_b256ac239a8041f49715aa823b35d3c6" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B-T-2gOlWAe/">Chin Sin Huan</a></div>`)[0];
+            popup_42ffec0b5b764bc7a44c0ae14e7d672c.setContent(html_b256ac239a8041f49715aa823b35d3c6);
+        
+
+        marker_02e328a05a1742a4acd0a6e292420752.bindPopup(popup_42ffec0b5b764bc7a44c0ae14e7d672c)
+        ;
+
+        
+    
+    
+            marker_02e328a05a1742a4acd0a6e292420752.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c4db6729c264509b1a2238e5ee18ba5 = L.marker(
+                [1.30100656917241, 103.838246592796],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_8a83ea6d25ee4ad79651245fff02b36e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6c4db6729c264509b1a2238e5ee18ba5.setIcon(icon_8a83ea6d25ee4ad79651245fff02b36e);
+        
+    
+        var popup_a7b095f0f06b4c6cb0b03e96f7de64ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f49e4d5ec0084b23a7233e71df4f2a94 = $(`<div id="html_f49e4d5ec0084b23a7233e71df4f2a94" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B-L-RFhlw10/">Chabuton</a></div>`)[0];
+            popup_a7b095f0f06b4c6cb0b03e96f7de64ef.setContent(html_f49e4d5ec0084b23a7233e71df4f2a94);
+        
+
+        marker_6c4db6729c264509b1a2238e5ee18ba5.bindPopup(popup_a7b095f0f06b4c6cb0b03e96f7de64ef)
+        ;
+
+        
+    
+    
+            marker_6c4db6729c264509b1a2238e5ee18ba5.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fe99daa7a59439ba7c14002953f39af = L.marker(
+                [1.30043464181261, 103.855281148598],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_eff1ab5c7b834e34946f1e8a92fba320 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4fe99daa7a59439ba7c14002953f39af.setIcon(icon_eff1ab5c7b834e34946f1e8a92fba320);
+        
+    
+        var popup_8f829b1f1655436d84e8dde91531b368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73c940a7ac0146dc8b8613c4e590719d = $(`<div id="html_73c940a7ac0146dc8b8613c4e590719d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B9dtYQil8_T/">Jinjja Chicken</a></div>`)[0];
+            popup_8f829b1f1655436d84e8dde91531b368.setContent(html_73c940a7ac0146dc8b8613c4e590719d);
+        
+
+        marker_4fe99daa7a59439ba7c14002953f39af.bindPopup(popup_8f829b1f1655436d84e8dde91531b368)
+        ;
+
+        
+    
+    
+            marker_4fe99daa7a59439ba7c14002953f39af.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e62ea1ef0c864e7b8c8ffec3f981077e = L.marker(
+                [1.35993782064432, 103.990002942162],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_1a5e53e857fa4ad0aed6ca165d5f3221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e62ea1ef0c864e7b8c8ffec3f981077e.setIcon(icon_1a5e53e857fa4ad0aed6ca165d5f3221);
+        
+    
+        var popup_d4b525883e044e8b90da203accd1888c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ed9658d30454e16bfcc11858a704847 = $(`<div id="html_8ed9658d30454e16bfcc11858a704847" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B9I8eqalxIk/">Shake Shack Singapore</a></div>`)[0];
+            popup_d4b525883e044e8b90da203accd1888c.setContent(html_8ed9658d30454e16bfcc11858a704847);
+        
+
+        marker_e62ea1ef0c864e7b8c8ffec3f981077e.bindPopup(popup_d4b525883e044e8b90da203accd1888c)
+        ;
+
+        
+    
+    
+            marker_e62ea1ef0c864e7b8c8ffec3f981077e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f6f9a3c28ea468d92311da93a057a03 = L.marker(
+                [1.32694504456951, 103.846554377679],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_8451b4c3113d47869f80c13b75ec8ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f6f9a3c28ea468d92311da93a057a03.setIcon(icon_8451b4c3113d47869f80c13b75ec8ecb);
+        
+    
+        var popup_fe21dc9eb7bd4ae287acfab13bec6a04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff5ed3b4ff5b48e9b0a26501f27fdf22 = $(`<div id="html_ff5ed3b4ff5b48e9b0a26501f27fdf22" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B9GNTBZl_Tv/">Starbuck</a></div>`)[0];
+            popup_fe21dc9eb7bd4ae287acfab13bec6a04.setContent(html_ff5ed3b4ff5b48e9b0a26501f27fdf22);
+        
+
+        marker_3f6f9a3c28ea468d92311da93a057a03.bindPopup(popup_fe21dc9eb7bd4ae287acfab13bec6a04)
+        ;
+
+        
+    
+    
+            marker_3f6f9a3c28ea468d92311da93a057a03.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e3a1f0cc9c14fd69e36e86c75807eef = L.marker(
+                [1.2866292132996, 103.80686187976],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_7ce98a37bedf41ffa391bbe470a57162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e3a1f0cc9c14fd69e36e86c75807eef.setIcon(icon_7ce98a37bedf41ffa391bbe470a57162);
+        
+    
+        var popup_6687d693fbbc4fcc9ce28a44e95000ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9db634ab8851406e8eaab8284da55cc3 = $(`<div id="html_9db634ab8851406e8eaab8284da55cc3" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B80n9TAFIfL/">Carrara Cafe</a></div>`)[0];
+            popup_6687d693fbbc4fcc9ce28a44e95000ea.setContent(html_9db634ab8851406e8eaab8284da55cc3);
+        
+
+        marker_4e3a1f0cc9c14fd69e36e86c75807eef.bindPopup(popup_6687d693fbbc4fcc9ce28a44e95000ea)
+        ;
+
+        
+    
+    
+            marker_4e3a1f0cc9c14fd69e36e86c75807eef.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd4489d80ff1467790ea65f07d17bcf5 = L.marker(
+                [1.28458716113229, 103.834924943798],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_538e73ebe1674f7299e98ff5c7b385f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd4489d80ff1467790ea65f07d17bcf5.setIcon(icon_538e73ebe1674f7299e98ff5c7b385f4);
+        
+    
+        var popup_d3c8931516b840b2bd6f3883abc6cecc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe15aeecf5394d00944bdea3434e90bc = $(`<div id="html_fe15aeecf5394d00944bdea3434e90bc" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B8nVGzdFV5r/">Cafe Pandan Nasi Lemak</a></div>`)[0];
+            popup_d3c8931516b840b2bd6f3883abc6cecc.setContent(html_fe15aeecf5394d00944bdea3434e90bc);
+        
+
+        marker_fd4489d80ff1467790ea65f07d17bcf5.bindPopup(popup_d3c8931516b840b2bd6f3883abc6cecc)
+        ;
+
+        
+    
+    
+            marker_fd4489d80ff1467790ea65f07d17bcf5.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53ecea7600a6492bbbe93f1d0745623a = L.marker(
+                [1.3920543053799, 103.895063884132],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_7f5efd0be6c343a6b54ce989f5bedf52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_53ecea7600a6492bbbe93f1d0745623a.setIcon(icon_7f5efd0be6c343a6b54ce989f5bedf52);
+        
+    
+        var popup_3cfd9aef3a364d02b496b50af18f707f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4ea41c0e3ef4fd2b58166e7a7c5e940 = $(`<div id="html_c4ea41c0e3ef4fd2b58166e7a7c5e940" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B8VlVBzljlp/">Soup Restaurant - Compass Point</a></div>`)[0];
+            popup_3cfd9aef3a364d02b496b50af18f707f.setContent(html_c4ea41c0e3ef4fd2b58166e7a7c5e940);
+        
+
+        marker_53ecea7600a6492bbbe93f1d0745623a.bindPopup(popup_3cfd9aef3a364d02b496b50af18f707f)
+        ;
+
+        
+    
+    
+            marker_53ecea7600a6492bbbe93f1d0745623a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88c233ff94744d50b77ddf5f75879dbc = L.marker(
+                [1.31139349427341, 103.856487111691],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_40f726b7347f40e5a49b6465a586594c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_88c233ff94744d50b77ddf5f75879dbc.setIcon(icon_40f726b7347f40e5a49b6465a586594c);
+        
+    
+        var popup_a98d905d35c24ceba8eabe53d77d3a04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93d1c588bf7044718c41a5500f5284da = $(`<div id="html_93d1c588bf7044718c41a5500f5284da" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B8I_0PvlK85/">Saizeriya At City Square Mall</a></div>`)[0];
+            popup_a98d905d35c24ceba8eabe53d77d3a04.setContent(html_93d1c588bf7044718c41a5500f5284da);
+        
+
+        marker_88c233ff94744d50b77ddf5f75879dbc.bindPopup(popup_a98d905d35c24ceba8eabe53d77d3a04)
+        ;
+
+        
+    
+    
+            marker_88c233ff94744d50b77ddf5f75879dbc.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_808c6093d50d4949b66e2a5aa0933992 = L.marker(
+                [1.31796214024159, 103.843423012413],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_c01404ce60234bf494696f9821132227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_808c6093d50d4949b66e2a5aa0933992.setIcon(icon_c01404ce60234bf494696f9821132227);
+        
+    
+        var popup_7b33589b0ee34b08ab9271f5dc7267e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f4b128d337341a7b323494a31cfe7c7 = $(`<div id="html_7f4b128d337341a7b323494a31cfe7c7" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B8By1RwnOdp/">Kamome Bakery</a></div>`)[0];
+            popup_7b33589b0ee34b08ab9271f5dc7267e6.setContent(html_7f4b128d337341a7b323494a31cfe7c7);
+        
+
+        marker_808c6093d50d4949b66e2a5aa0933992.bindPopup(popup_7b33589b0ee34b08ab9271f5dc7267e6)
+        ;
+
+        
+    
+    
+            marker_808c6093d50d4949b66e2a5aa0933992.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_371eff641cd541ce8c59b2c65c652b98 = L.marker(
+                [1.33434526695051, 103.889637526675],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_648b9716106e478aaac36b67526fcaa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_371eff641cd541ce8c59b2c65c652b98.setIcon(icon_648b9716106e478aaac36b67526fcaa7);
+        
+    
+        var popup_5aed70a6401e41b2b19875dc35768152 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c04ee7c5291646a3ba4d23af9275ebda = $(`<div id="html_c04ee7c5291646a3ba4d23af9275ebda" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B7hoiPZFgBY/">Din Tai Fung Singapore</a></div>`)[0];
+            popup_5aed70a6401e41b2b19875dc35768152.setContent(html_c04ee7c5291646a3ba4d23af9275ebda);
+        
+
+        marker_371eff641cd541ce8c59b2c65c652b98.bindPopup(popup_5aed70a6401e41b2b19875dc35768152)
+        ;
+
+        
+    
+    
+            marker_371eff641cd541ce8c59b2c65c652b98.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ef985aa202943bfad7030f69e3081d2 = L.marker(
+                [1.29271114030478, 103.762546136678],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_a11cd845a3a946f4bfd0feae8d5f4827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9ef985aa202943bfad7030f69e3081d2.setIcon(icon_a11cd845a3a946f4bfd0feae8d5f4827);
+        
+    
+        var popup_a50f633082e84fb7919d12378939998d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb4d1ea218e04d5cb5aac5355e953e4d = $(`<div id="html_eb4d1ea218e04d5cb5aac5355e953e4d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B7dMEepFYIW/">Republic of Singapore Yacht Club</a></div>`)[0];
+            popup_a50f633082e84fb7919d12378939998d.setContent(html_eb4d1ea218e04d5cb5aac5355e953e4d);
+        
+
+        marker_9ef985aa202943bfad7030f69e3081d2.bindPopup(popup_a50f633082e84fb7919d12378939998d)
+        ;
+
+        
+    
+    
+            marker_9ef985aa202943bfad7030f69e3081d2.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41d30fd999d24be686c9971ec1633aae = L.marker(
+                [1.36169271024529, 103.886015588332],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_766bd88c7f0c484c91d4040e3be7731f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_41d30fd999d24be686c9971ec1633aae.setIcon(icon_766bd88c7f0c484c91d4040e3be7731f);
+        
+    
+        var popup_0ebfd1f4921e4425a25efc8d1516e7b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59a67772fb45416fb410a19b952b1a67 = $(`<div id="html_59a67772fb45416fb410a19b952b1a67" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B7KX0qYlgzY/">Lola's Cafe</a></div>`)[0];
+            popup_0ebfd1f4921e4425a25efc8d1516e7b2.setContent(html_59a67772fb45416fb410a19b952b1a67);
+        
+
+        marker_41d30fd999d24be686c9971ec1633aae.bindPopup(popup_0ebfd1f4921e4425a25efc8d1516e7b2)
+        ;
+
+        
+    
+    
+            marker_41d30fd999d24be686c9971ec1633aae.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_980bccd631614dad84a5792a0e83976a = L.marker(
+                [1.26430476483158, 103.822308649643],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3f99b1187374489fa9c57112989ca1c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_980bccd631614dad84a5792a0e83976a.setIcon(icon_3f99b1187374489fa9c57112989ca1c5);
+        
+    
+        var popup_493ebdc9f17345cb806bbec2c5286726 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_538bbee7f89b4011b1fb6d802671a943 = $(`<div id="html_538bbee7f89b4011b1fb6d802671a943" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B7FuEuNF1ZL/">Go-Ang at Vivo City</a></div>`)[0];
+            popup_493ebdc9f17345cb806bbec2c5286726.setContent(html_538bbee7f89b4011b1fb6d802671a943);
+        
+
+        marker_980bccd631614dad84a5792a0e83976a.bindPopup(popup_493ebdc9f17345cb806bbec2c5286726)
+        ;
+
+        
+    
+    
+            marker_980bccd631614dad84a5792a0e83976a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a0e9d501fb749ae92ce2bed5f8ae70d = L.marker(
+                [1.30624873073847, 103.829034914315],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_aa5b88447df54b53a5faf2b6769fda63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2a0e9d501fb749ae92ce2bed5f8ae70d.setIcon(icon_aa5b88447df54b53a5faf2b6769fda63);
+        
+    
+        var popup_b2c21fb13725428e93cf0bc51ae62ee7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c71b24040f6477aa821322a5143a0a2 = $(`<div id="html_0c71b24040f6477aa821322a5143a0a2" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B6zMPFwl4zd/">Social Place Singapore</a></div>`)[0];
+            popup_b2c21fb13725428e93cf0bc51ae62ee7.setContent(html_0c71b24040f6477aa821322a5143a0a2);
+        
+
+        marker_2a0e9d501fb749ae92ce2bed5f8ae70d.bindPopup(popup_b2c21fb13725428e93cf0bc51ae62ee7)
+        ;
+
+        
+    
+    
+            marker_2a0e9d501fb749ae92ce2bed5f8ae70d.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_719167b4d0f54f77a93ea5dd720ed21f = L.marker(
+                [1.29673744760827, 103.833005715415],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_518adf919e854f38aa09517b631f4037 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_719167b4d0f54f77a93ea5dd720ed21f.setIcon(icon_518adf919e854f38aa09517b631f4037);
+        
+    
+        var popup_2eafb22841d942439a0cd439882d223e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81f2dae24d6a43fa9498823428f2e87b = $(`<div id="html_81f2dae24d6a43fa9498823428f2e87b" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B6Zyb1RFmIG/">Lamb Cupcakery</a></div>`)[0];
+            popup_2eafb22841d942439a0cd439882d223e.setContent(html_81f2dae24d6a43fa9498823428f2e87b);
+        
+
+        marker_719167b4d0f54f77a93ea5dd720ed21f.bindPopup(popup_2eafb22841d942439a0cd439882d223e)
+        ;
+
+        
+    
+    
+            marker_719167b4d0f54f77a93ea5dd720ed21f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b32e949d40b4d64803cb5663f2aa010 = L.marker(
+                [1.317659564035, 103.852923980841],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_f94eb421e3ee45caa3e7d014cc42e284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3b32e949d40b4d64803cb5663f2aa010.setIcon(icon_f94eb421e3ee45caa3e7d014cc42e284);
+        
+    
+        var popup_fdc036c3c57844fdbd9ba91c9babd4b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25fd098b27ab47078752353117078466 = $(`<div id="html_25fd098b27ab47078752353117078466" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B6KRN5mlFV7/">NG AH SIO Bak Kut Teh</a></div>`)[0];
+            popup_fdc036c3c57844fdbd9ba91c9babd4b2.setContent(html_25fd098b27ab47078752353117078466);
+        
+
+        marker_3b32e949d40b4d64803cb5663f2aa010.bindPopup(popup_fdc036c3c57844fdbd9ba91c9babd4b2)
+        ;
+
+        
+    
+    
+            marker_3b32e949d40b4d64803cb5663f2aa010.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a76d7dd169d45c8a80a07ad06458b5a = L.marker(
+                [1.29487905002429, 103.857675494346],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_948830dd34904ba5a5f14ee16c9442f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0a76d7dd169d45c8a80a07ad06458b5a.setIcon(icon_948830dd34904ba5a5f14ee16c9442f4);
+        
+    
+        var popup_7a1955d3321d4b67823093816f496fa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_485d8fc229ef4910b64ae13da5ff987c = $(`<div id="html_485d8fc229ef4910b64ae13da5ff987c" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B4wIkU_FxnH/">Ya Kun Kaya Toast Suntec City</a></div>`)[0];
+            popup_7a1955d3321d4b67823093816f496fa1.setContent(html_485d8fc229ef4910b64ae13da5ff987c);
+        
+
+        marker_0a76d7dd169d45c8a80a07ad06458b5a.bindPopup(popup_7a1955d3321d4b67823093816f496fa1)
+        ;
+
+        
+    
+    
+            marker_0a76d7dd169d45c8a80a07ad06458b5a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f83ab9cdeebe413ea4cbb82930e0a269 = L.marker(
+                [1.36254651681749, 103.888079684184],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_8b937b8de2d24fd9aee0fdd8dce4868b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f83ab9cdeebe413ea4cbb82930e0a269.setIcon(icon_8b937b8de2d24fd9aee0fdd8dce4868b);
+        
+    
+        var popup_90951985c34f47f6873a6adeb3386a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfb9791f290647409f0f10c8e2f1be88 = $(`<div id="html_cfb9791f290647409f0f10c8e2f1be88" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B4Z-iD2lflc/">Yi Dian Xin Hong Kong Dim Sum at Kovan</a></div>`)[0];
+            popup_90951985c34f47f6873a6adeb3386a9c.setContent(html_cfb9791f290647409f0f10c8e2f1be88);
+        
+
+        marker_f83ab9cdeebe413ea4cbb82930e0a269.bindPopup(popup_90951985c34f47f6873a6adeb3386a9c)
+        ;
+
+        
+    
+    
+            marker_f83ab9cdeebe413ea4cbb82930e0a269.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b0afed85e69437885a8dd2c57dc294e = L.marker(
+                [1.30100656917241, 103.838246592796],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_52d7fc6b124c40d796b24349b65ff214 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3b0afed85e69437885a8dd2c57dc294e.setIcon(icon_52d7fc6b124c40d796b24349b65ff214);
+        
+    
+        var popup_1681d1974b1c4a5ab6ecbb085dae52a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc24b19d6de446e7bd85e2921ed95c99 = $(`<div id="html_bc24b19d6de446e7bd85e2921ed95c99" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B4J5Bxin1CO/">Cafe De Paris Singapore</a></div>`)[0];
+            popup_1681d1974b1c4a5ab6ecbb085dae52a3.setContent(html_bc24b19d6de446e7bd85e2921ed95c99);
+        
+
+        marker_3b0afed85e69437885a8dd2c57dc294e.bindPopup(popup_1681d1974b1c4a5ab6ecbb085dae52a3)
+        ;
+
+        
+    
+    
+            marker_3b0afed85e69437885a8dd2c57dc294e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_880908f4c3b743e9a9b8429e66a305ea = L.marker(
+                [1.31181667510352, 103.795213347905],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_9633590f40064b1eae94b93d8c2d6ae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_880908f4c3b743e9a9b8429e66a305ea.setIcon(icon_9633590f40064b1eae94b93d8c2d6ae9);
+        
+    
+        var popup_672d01c0116c48dc83051c6b1bdae6b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c68986fdee894b6584ffac00caa0a862 = $(`<div id="html_c68986fdee894b6584ffac00caa0a862" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B34mEeaF35c/">Fosters (an english rose cafe)</a></div>`)[0];
+            popup_672d01c0116c48dc83051c6b1bdae6b5.setContent(html_c68986fdee894b6584ffac00caa0a862);
+        
+
+        marker_880908f4c3b743e9a9b8429e66a305ea.bindPopup(popup_672d01c0116c48dc83051c6b1bdae6b5)
+        ;
+
+        
+    
+    
+            marker_880908f4c3b743e9a9b8429e66a305ea.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4049370bc0da48fab01b5ca933e0d162 = L.marker(
+                [1.3325523295069, 103.743262234833],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3160081384ea47f38059b77339a5e74e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4049370bc0da48fab01b5ca933e0d162.setIcon(icon_3160081384ea47f38059b77339a5e74e);
+        
+    
+        var popup_c0c356851d4943778ac25ed9a2d77d16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a4172d588c344eaaf7142c55b49e42e = $(`<div id="html_8a4172d588c344eaaf7142c55b49e42e" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B3PUrCjF7K_/">Marche JEM</a></div>`)[0];
+            popup_c0c356851d4943778ac25ed9a2d77d16.setContent(html_8a4172d588c344eaaf7142c55b49e42e);
+        
+
+        marker_4049370bc0da48fab01b5ca933e0d162.bindPopup(popup_c0c356851d4943778ac25ed9a2d77d16)
+        ;
+
+        
+    
+    
+            marker_4049370bc0da48fab01b5ca933e0d162.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bde10f7a22c54a6b9487677ef316ab1e = L.marker(
+                [1.29614540183827, 103.855748567523],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_9986c426ff4d456b9eac1dca2cfcaaf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bde10f7a22c54a6b9487677ef316ab1e.setIcon(icon_9986c426ff4d456b9eac1dca2cfcaaf8);
+        
+    
+        var popup_d1a15c244abe4b76817093f4e9d28e12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a795bddd42740409f5d5fcd2d294d96 = $(`<div id="html_0a795bddd42740409f5d5fcd2d294d96" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B1kswo6Firf/">YY Kafei Dian Singapore</a></div>`)[0];
+            popup_d1a15c244abe4b76817093f4e9d28e12.setContent(html_0a795bddd42740409f5d5fcd2d294d96);
+        
+
+        marker_bde10f7a22c54a6b9487677ef316ab1e.bindPopup(popup_d1a15c244abe4b76817093f4e9d28e12)
+        ;
+
+        
+    
+    
+            marker_bde10f7a22c54a6b9487677ef316ab1e.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24dbb25a345847f4a800468235aac737 = L.marker(
+                [1.33355772097994, 103.850977857277],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_0fa3e1b1d85743f2a5cd04ed7102e846 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24dbb25a345847f4a800468235aac737.setIcon(icon_0fa3e1b1d85743f2a5cd04ed7102e846);
+        
+    
+        var popup_0d17c74fbb414ee69f08a41bda92b7e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41c572cbdec2415eafb17f58cc9949d3 = $(`<div id="html_41c572cbdec2415eafb17f58cc9949d3" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B1VFpQHloDR/">Swatow Seafood Restaurant</a></div>`)[0];
+            popup_0d17c74fbb414ee69f08a41bda92b7e1.setContent(html_41c572cbdec2415eafb17f58cc9949d3);
+        
+
+        marker_24dbb25a345847f4a800468235aac737.bindPopup(popup_0d17c74fbb414ee69f08a41bda92b7e1)
+        ;
+
+        
+    
+    
+            marker_24dbb25a345847f4a800468235aac737.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e274f71ded24b2b965641c9418f3aff = L.marker(
+                [1.28402150049556, 103.864915787491],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_31c844631b2144ed8d1075e61f61d35f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e274f71ded24b2b965641c9418f3aff.setIcon(icon_31c844631b2144ed8d1075e61f61d35f);
+        
+    
+        var popup_03e527f537fb447ba8aeb384617c314e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4af875a61da148c1b05aac991992bde4 = $(`<div id="html_4af875a61da148c1b05aac991992bde4" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B1EFWMAH6Lm/">Satay By the Bay</a></div>`)[0];
+            popup_03e527f537fb447ba8aeb384617c314e.setContent(html_4af875a61da148c1b05aac991992bde4);
+        
+
+        marker_5e274f71ded24b2b965641c9418f3aff.bindPopup(popup_03e527f537fb447ba8aeb384617c314e)
+        ;
+
+        
+    
+    
+            marker_5e274f71ded24b2b965641c9418f3aff.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_512d74c81187408ca2c2ad2a1255b647 = L.marker(
+                [1.32044103104797, 103.844192628979],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_9ff8a07cf9834899bf5e79eaf12f131a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_512d74c81187408ca2c2ad2a1255b647.setIcon(icon_9ff8a07cf9834899bf5e79eaf12f131a);
+        
+    
+        var popup_a23fa37751104a95a5ae59cf754c6313 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25c3d06f44684194bda02baafa9d037b = $(`<div id="html_25c3d06f44684194bda02baafa9d037b" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/B0D5l-Gl5lG/">Jollibee Novena Square 2</a></div>`)[0];
+            popup_a23fa37751104a95a5ae59cf754c6313.setContent(html_25c3d06f44684194bda02baafa9d037b);
+        
+
+        marker_512d74c81187408ca2c2ad2a1255b647.bindPopup(popup_a23fa37751104a95a5ae59cf754c6313)
+        ;
+
+        
+    
+    
+            marker_512d74c81187408ca2c2ad2a1255b647.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_433a390d78c442d58e4694f28c0fee4a = L.marker(
+                [1.31808438321302, 103.843786697098],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_864b5eeff27c42e3b11db91aea9f4c9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_433a390d78c442d58e4694f28c0fee4a.setIcon(icon_864b5eeff27c42e3b11db91aea9f4c9c);
+        
+    
+        var popup_af761e2b4eeb49ecbcb825b3683014fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6c1e4918d2f45e68e40b89acb04036d = $(`<div id="html_a6c1e4918d2f45e68e40b89acb04036d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bz5iSOZFokn/">Udders Ice Cream Novena</a></div>`)[0];
+            popup_af761e2b4eeb49ecbcb825b3683014fc.setContent(html_a6c1e4918d2f45e68e40b89acb04036d);
+        
+
+        marker_433a390d78c442d58e4694f28c0fee4a.bindPopup(popup_af761e2b4eeb49ecbcb825b3683014fc)
+        ;
+
+        
+    
+    
+            marker_433a390d78c442d58e4694f28c0fee4a.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e836da87213a41f7a4a785db97c645d5 = L.marker(
+                [1.3050961572391, 103.903210971969],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_d362c27704b84ec98b5115f149cbfa80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e836da87213a41f7a4a785db97c645d5.setIcon(icon_d362c27704b84ec98b5115f149cbfa80);
+        
+    
+        var popup_d896ada41fcb4145bda41b527765f797 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2109f41ec97e410ebaf147c781d2355b = $(`<div id="html_2109f41ec97e410ebaf147c781d2355b" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bzz3laSltpf/">328 Katong Laksa</a></div>`)[0];
+            popup_d896ada41fcb4145bda41b527765f797.setContent(html_2109f41ec97e410ebaf147c781d2355b);
+        
+
+        marker_e836da87213a41f7a4a785db97c645d5.bindPopup(popup_d896ada41fcb4145bda41b527765f797)
+        ;
+
+        
+    
+    
+            marker_e836da87213a41f7a4a785db97c645d5.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_857eeda52ced4fd6b752fd7f0f3409b9 = L.marker(
+                [1.30083890839245, 103.839434733899],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_5e61da9da6c24b969c9307d3465109ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_857eeda52ced4fd6b752fd7f0f3409b9.setIcon(icon_5e61da9da6c24b969c9307d3465109ed);
+        
+    
+        var popup_770ed1d5bbed4636a4180895732b6c23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9203b1f74b2540b0a7e58ec64e353217 = $(`<div id="html_9203b1f74b2540b0a7e58ec64e353217" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BzfWo5xlXjF/">TungLok Seafood Orchard Central</a></div>`)[0];
+            popup_770ed1d5bbed4636a4180895732b6c23.setContent(html_9203b1f74b2540b0a7e58ec64e353217);
+        
+
+        marker_857eeda52ced4fd6b752fd7f0f3409b9.bindPopup(popup_770ed1d5bbed4636a4180895732b6c23)
+        ;
+
+        
+    
+    
+            marker_857eeda52ced4fd6b752fd7f0f3409b9.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_082003ac3d764332948dbd33c466e487 = L.marker(
+                [1.27923534207055, 103.844082278761],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_074894e8c93b4e0298c0123631a9c68a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_082003ac3d764332948dbd33c466e487.setIcon(icon_074894e8c93b4e0298c0123631a9c68a);
+        
+    
+        var popup_f3d82ce1bdc846bf94cff3d3ca193a18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cfc2584ab0d4a5e93b0d65683cea359 = $(`<div id="html_0cfc2584ab0d4a5e93b0d65683cea359" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BzXiZ6elF6p/">Todamgol</a></div>`)[0];
+            popup_f3d82ce1bdc846bf94cff3d3ca193a18.setContent(html_0cfc2584ab0d4a5e93b0d65683cea359);
+        
+
+        marker_082003ac3d764332948dbd33c466e487.bindPopup(popup_f3d82ce1bdc846bf94cff3d3ca193a18)
+        ;
+
+        
+    
+    
+            marker_082003ac3d764332948dbd33c466e487.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a6c93592d78470eb76432246414f4f1 = L.marker(
+                [1.33140072451016, 103.849393733408],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_eb3014f0c4e444fa85058c0fb236ac14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2a6c93592d78470eb76432246414f4f1.setIcon(icon_eb3014f0c4e444fa85058c0fb236ac14);
+        
+    
+        var popup_d090ff78098242f880a7ab3b4a48d4ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5097c02abd24979b141b6a1ac5e996a = $(`<div id="html_b5097c02abd24979b141b6a1ac5e996a" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BzPJo9tnKmO/">Jack's Place</a></div>`)[0];
+            popup_d090ff78098242f880a7ab3b4a48d4ac.setContent(html_b5097c02abd24979b141b6a1ac5e996a);
+        
+
+        marker_2a6c93592d78470eb76432246414f4f1.bindPopup(popup_d090ff78098242f880a7ab3b4a48d4ac)
+        ;
+
+        
+    
+    
+            marker_2a6c93592d78470eb76432246414f4f1.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7db40ee8ae3f495c8ff900cc4b5e9835 = L.marker(
+                [1.33023240108314, 103.849164313542],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_4b26e179cd8e40b7a7631d9a34d4e7e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7db40ee8ae3f495c8ff900cc4b5e9835.setIcon(icon_4b26e179cd8e40b7a7631d9a34d4e7e9);
+        
+    
+        var popup_fc97d9d6770640058484d5574d4e59c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_189abf4a98874c1195fd8a33ccc66439 = $(`<div id="html_189abf4a98874c1195fd8a33ccc66439" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BxrUgjbF4HZ/">Oasis Taiwan Porridge</a></div>`)[0];
+            popup_fc97d9d6770640058484d5574d4e59c8.setContent(html_189abf4a98874c1195fd8a33ccc66439);
+        
+
+        marker_7db40ee8ae3f495c8ff900cc4b5e9835.bindPopup(popup_fc97d9d6770640058484d5574d4e59c8)
+        ;
+
+        
+    
+    
+            marker_7db40ee8ae3f495c8ff900cc4b5e9835.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_026b684658c240fdbed9e3f768181174 = L.marker(
+                [1.30615048740141, 103.83185337296],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_457fa7133e1d4af0b2ca028bdfda152e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_026b684658c240fdbed9e3f768181174.setIcon(icon_457fa7133e1d4af0b2ca028bdfda152e);
+        
+    
+        var popup_e3bcfe5b43eb4b0aa93e8998e9477f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b6bbc4b53d946ac9279bba954f3773e = $(`<div id="html_6b6bbc4b53d946ac9279bba954f3773e" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BxmDxieFMKp/">Tarte by Cheryl Koh</a></div>`)[0];
+            popup_e3bcfe5b43eb4b0aa93e8998e9477f79.setContent(html_6b6bbc4b53d946ac9279bba954f3773e);
+        
+
+        marker_026b684658c240fdbed9e3f768181174.bindPopup(popup_e3bcfe5b43eb4b0aa93e8998e9477f79)
+        ;
+
+        
+    
+    
+            marker_026b684658c240fdbed9e3f768181174.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50d8ca0e537142518af84135f2587321 = L.marker(
+                [1.32057156550961, 103.843219261065],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_009a9dda7259444dbe7dad3d59380d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_50d8ca0e537142518af84135f2587321.setIcon(icon_009a9dda7259444dbe7dad3d59380d64);
+        
+    
+        var popup_e7e80559ea4f41929b96fd345b3f54e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_806d4f45e0244f4f9819363ab10ffc6d = $(`<div id="html_806d4f45e0244f4f9819363ab10ffc6d" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BxZZ_b0nuKc/">Mademoiselle Tang Noodle</a></div>`)[0];
+            popup_e7e80559ea4f41929b96fd345b3f54e7.setContent(html_806d4f45e0244f4f9819363ab10ffc6d);
+        
+
+        marker_50d8ca0e537142518af84135f2587321.bindPopup(popup_e7e80559ea4f41929b96fd345b3f54e7)
+        ;
+
+        
+    
+    
+            marker_50d8ca0e537142518af84135f2587321.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f631321c38174f9b9c7a69f7fef3b899 = L.marker(
+                [1.31844060903904, 103.843615217698],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_bf08b09198454ba1850414beb1e477a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f631321c38174f9b9c7a69f7fef3b899.setIcon(icon_bf08b09198454ba1850414beb1e477a1);
+        
+    
+        var popup_e1fb15bed4424e7d9dbd2db432c27b46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca4807a81608412ca9ae5cdf81feda2b = $(`<div id="html_ca4807a81608412ca9ae5cdf81feda2b" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BxALwe5FlFt/">Ah Chew Desserts</a></div>`)[0];
+            popup_e1fb15bed4424e7d9dbd2db432c27b46.setContent(html_ca4807a81608412ca9ae5cdf81feda2b);
+        
+
+        marker_f631321c38174f9b9c7a69f7fef3b899.bindPopup(popup_e1fb15bed4424e7d9dbd2db432c27b46)
+        ;
+
+        
+    
+    
+            marker_f631321c38174f9b9c7a69f7fef3b899.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25b15797922149d4b1c8f3a4c37a05c8 = L.marker(
+                [1.26717443125259, 103.807520684544],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_59043d84a2db4df88640f4ef6d2edc6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25b15797922149d4b1c8f3a4c37a05c8.setIcon(icon_59043d84a2db4df88640f4ef6d2edc6b);
+        
+    
+        var popup_8963a7ef011d4988bb4d737a7e2ef46c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1ab9be88b9543d099eedae7df508431 = $(`<div id="html_c1ab9be88b9543d099eedae7df508431" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BwUaY92F4ri/">Peony Jade</a></div>`)[0];
+            popup_8963a7ef011d4988bb4d737a7e2ef46c.setContent(html_c1ab9be88b9543d099eedae7df508431);
+        
+
+        marker_25b15797922149d4b1c8f3a4c37a05c8.bindPopup(popup_8963a7ef011d4988bb4d737a7e2ef46c)
+        ;
+
+        
+    
+    
+            marker_25b15797922149d4b1c8f3a4c37a05c8.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9266b98623b249fa9d9af09ed1bff83f = L.marker(
+                [1.3379617298204, 103.843250722733],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_acb016ab264641799691d33829d3fa8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9266b98623b249fa9d9af09ed1bff83f.setIcon(icon_acb016ab264641799691d33829d3fa8b);
+        
+    
+        var popup_1689df18df20462d9d6db762a4f28d44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67cd1bd3d766454e9577ca0557356902 = $(`<div id="html_67cd1bd3d766454e9577ca0557356902" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BwMwhWZFF2O/">Creamier Handcrafted Ice Cream and Coffee</a></div>`)[0];
+            popup_1689df18df20462d9d6db762a4f28d44.setContent(html_67cd1bd3d766454e9577ca0557356902);
+        
+
+        marker_9266b98623b249fa9d9af09ed1bff83f.bindPopup(popup_1689df18df20462d9d6db762a4f28d44)
+        ;
+
+        
+    
+    
+            marker_9266b98623b249fa9d9af09ed1bff83f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3fa66c236cc4276ae40beba3ab16155 = L.marker(
+                [1.32342818718207, 103.854060197812],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_c17bd5523ece4b9d884c534025ff9e3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3fa66c236cc4276ae40beba3ab16155.setIcon(icon_c17bd5523ece4b9d884c534025ff9e3c);
+        
+    
+        var popup_6b41f5d3cd4742b6ba20ea2922f4de25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c063ea4a2ff4081b1b435d80cec2a28 = $(`<div id="html_3c063ea4a2ff4081b1b435d80cec2a28" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bvx3wcqFMjK/">545 Whampoa Prawn Noodles 01-39</a></div>`)[0];
+            popup_6b41f5d3cd4742b6ba20ea2922f4de25.setContent(html_3c063ea4a2ff4081b1b435d80cec2a28);
+        
+
+        marker_a3fa66c236cc4276ae40beba3ab16155.bindPopup(popup_6b41f5d3cd4742b6ba20ea2922f4de25)
+        ;
+
+        
+    
+    
+            marker_a3fa66c236cc4276ae40beba3ab16155.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5d608cd32bd471fab19b2b0b49f3803 = L.marker(
+                [1.33739437057829, 103.848544395764],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_22c08e1d704e4157b848f555336b7649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d5d608cd32bd471fab19b2b0b49f3803.setIcon(icon_22c08e1d704e4157b848f555336b7649);
+        
+    
+        var popup_1aad5b22d43d46d1af704f6adaeaa0e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5569004bc23341cc9afa04438deb85c5 = $(`<div id="html_5569004bc23341cc9afa04438deb85c5" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bvsxne-n-Nl/">Chef Kangâ€™s Noodle House</a></div>`)[0];
+            popup_1aad5b22d43d46d1af704f6adaeaa0e6.setContent(html_5569004bc23341cc9afa04438deb85c5);
+        
+
+        marker_d5d608cd32bd471fab19b2b0b49f3803.bindPopup(popup_1aad5b22d43d46d1af704f6adaeaa0e6)
+        ;
+
+        
+    
+    
+            marker_d5d608cd32bd471fab19b2b0b49f3803.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15b59533892145d28f4efd9d8e6b8190 = L.marker(
+                [1.31139349427341, 103.856487111691],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_e0336841afd641bab3b3d5d701121b73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_15b59533892145d28f4efd9d8e6b8190.setIcon(icon_e0336841afd641bab3b3d5d701121b73);
+        
+    
+        var popup_99db9637cdb4469eb68ef942cd00675a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6183dfd03d1d416888e730d61bd9ec8e = $(`<div id="html_6183dfd03d1d416888e730d61bd9ec8e" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BvYqZB8luMy/">Chic-a-boo Fried Chicken</a></div>`)[0];
+            popup_99db9637cdb4469eb68ef942cd00675a.setContent(html_6183dfd03d1d416888e730d61bd9ec8e);
+        
+
+        marker_15b59533892145d28f4efd9d8e6b8190.bindPopup(popup_99db9637cdb4469eb68ef942cd00675a)
+        ;
+
+        
+    
+    
+            marker_15b59533892145d28f4efd9d8e6b8190.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6e2b07807fc415a8329c890a969adda = L.marker(
+                [1.31719450988559, 103.843611443038],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_fe37a61271db45579b020444aa90ffbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6e2b07807fc415a8329c890a969adda.setIcon(icon_fe37a61271db45579b020444aa90ffbd);
+        
+    
+        var popup_c18a4a40bc48466b87b5c375a3cc461d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e91df09aa144b4ba375e853c55dafa2 = $(`<div id="html_6e91df09aa144b4ba375e853c55dafa2" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bssqc57ABXQ/">Hoshino Coffee</a></div>`)[0];
+            popup_c18a4a40bc48466b87b5c375a3cc461d.setContent(html_6e91df09aa144b4ba375e853c55dafa2);
+        
+
+        marker_a6e2b07807fc415a8329c890a969adda.bindPopup(popup_c18a4a40bc48466b87b5c375a3cc461d)
+        ;
+
+        
+    
+    
+            marker_a6e2b07807fc415a8329c890a969adda.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f1cdf1c73fc4849af103a4a53bc092c = L.marker(
+                [1.31181667510352, 103.795213347905],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_3c62f0baada542cc9483b0cf096558a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7f1cdf1c73fc4849af103a4a53bc092c.setIcon(icon_3c62f0baada542cc9483b0cf096558a3);
+        
+    
+        var popup_0e7fab0e7f204c8482319baddfa52bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbf6b09dad83405e8ed9f46f4065a0e1 = $(`<div id="html_bbf6b09dad83405e8ed9f46f4065a0e1" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bqbb3AWgIcN/">Fosters (an english rose cafe)</a></div>`)[0];
+            popup_0e7fab0e7f204c8482319baddfa52bb2.setContent(html_bbf6b09dad83405e8ed9f46f4065a0e1);
+        
+
+        marker_7f1cdf1c73fc4849af103a4a53bc092c.bindPopup(popup_0e7fab0e7f204c8482319baddfa52bb2)
+        ;
+
+        
+    
+    
+            marker_7f1cdf1c73fc4849af103a4a53bc092c.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ef7d84b138c41c5acc241444e2511a4 = L.marker(
+                [1.31411965463946, 103.878364622451],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_e0e269de5bb34946847b9585a257e20e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7ef7d84b138c41c5acc241444e2511a4.setIcon(icon_e0e269de5bb34946847b9585a257e20e);
+        
+    
+        var popup_65b9ed8b244c49b4b07908136442df40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d3bbb05a39e4e46b44bc3980ec70baa = $(`<div id="html_4d3bbb05a39e4e46b44bc3980ec70baa" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BqUSLVyABqz/">126 Dim Sum Wen Dao Shi</a></div>`)[0];
+            popup_65b9ed8b244c49b4b07908136442df40.setContent(html_4d3bbb05a39e4e46b44bc3980ec70baa);
+        
+
+        marker_7ef7d84b138c41c5acc241444e2511a4.bindPopup(popup_65b9ed8b244c49b4b07908136442df40)
+        ;
+
+        
+    
+    
+            marker_7ef7d84b138c41c5acc241444e2511a4.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbbbef319c9f4a27a5f08384068ad12f = L.marker(
+                [1.33691029763166, 103.854030352751],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_71bea8b91a7e4a068da368572bba17ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cbbbef319c9f4a27a5f08384068ad12f.setIcon(icon_71bea8b91a7e4a068da368572bba17ac);
+        
+    
+        var popup_b5f5f8c20af8475f9f23033f81be6e66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f0cbd95648941618248f2b514aaf423 = $(`<div id="html_7f0cbd95648941618248f2b514aaf423" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/BpLVc2HFgFm/">Soi 47 Thai Food</a></div>`)[0];
+            popup_b5f5f8c20af8475f9f23033f81be6e66.setContent(html_7f0cbd95648941618248f2b514aaf423);
+        
+
+        marker_cbbbef319c9f4a27a5f08384068ad12f.bindPopup(popup_b5f5f8c20af8475f9f23033f81be6e66)
+        ;
+
+        
+    
+    
+            marker_cbbbef319c9f4a27a5f08384068ad12f.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0aba6030c764385a5f456e4a3f099ce = L.marker(
+                [1.33781465652998, 103.84513085219],
+                {}
+            ).addTo(marker_cluster_ff7e57cbf4f84434979e8042a64210ee);
+        
+    
+            var icon_2ac5f11f8d19463e9550a0834b45920b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f0aba6030c764385a5f456e4a3f099ce.setIcon(icon_2ac5f11f8d19463e9550a0834b45920b);
+        
+    
+        var popup_e9673ce0f77e40c69fc7a1970396f782 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c518045a0b4497ebfc97a133d1d77eb = $(`<div id="html_2c518045a0b4497ebfc97a133d1d77eb" style="width: 100.0%; height: 100.0%;"><a target="_blank" href="https://www.instagram.com/p/Bn-eOrNHY4G/">Donya Japanese Cuisine</a></div>`)[0];
+            popup_e9673ce0f77e40c69fc7a1970396f782.setContent(html_2c518045a0b4497ebfc97a133d1d77eb);
+        
+
+        marker_f0aba6030c764385a5f456e4a3f099ce.bindPopup(popup_e9673ce0f77e40c69fc7a1970396f782)
+        ;
+
+        
+    
+    
+            marker_f0aba6030c764385a5f456e4a3f099ce.bindTooltip(
+                `<div>
+                     Click for link!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
